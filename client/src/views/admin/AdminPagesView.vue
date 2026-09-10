@@ -2,9 +2,9 @@
   <div class="space-y-6 pb-16">
     
     <!-- Top Header -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
-        <h1 class="text-2xl font-heading font-black text-white uppercase tracking-tight">
+        <h1 class="text-xl sm:text-2xl font-heading font-black text-white uppercase tracking-tight">
           Page Content & Section CMS
         </h1>
         <p class="text-xs text-gray-400 mt-1">
@@ -12,17 +12,17 @@
         </p>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 w-full md:w-auto">
         <input
           v-model="searchQuery"
           type="text"
           placeholder="Filter pages by title or slug..."
-          class="bg-[#181818] border border-brand-border focus:border-brand-gold text-white px-3 py-2 text-xs outline-none w-52 sm:w-60"
+          class="bg-[#181818] border border-brand-border focus:border-brand-gold text-white px-3 py-2 text-xs outline-none w-full sm:w-56"
         />
 
         <button
           @click="openCreateModal"
-          class="px-4 py-2 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow flex items-center gap-1.5 whitespace-nowrap"
+          class="px-4 py-2 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow flex items-center justify-center gap-1.5 whitespace-nowrap"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
@@ -33,13 +33,13 @@
     </div>
 
     <!-- Category Tabs -->
-    <div class="flex flex-wrap gap-2 border-b border-brand-border pb-3 text-xs font-bold uppercase tracking-wider">
+    <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 border-b border-brand-border text-xs font-bold uppercase tracking-wider -webkit-overflow-scrolling-touch">
       <button
         v-for="cat in categories"
         :key="cat.id"
         @click="selectedCategory = cat.id"
         :class="[
-          'px-4 py-2 transition-colors rounded-sm',
+          'px-3 sm:px-4 py-1.5 sm:py-2 transition-colors rounded-sm whitespace-nowrap shrink-0 text-[11px] sm:text-xs',
           selectedCategory === cat.id
             ? 'bg-brand-gold text-black shadow-gold-glow'
             : 'bg-[#181818] text-gray-300 hover:bg-[#252525] hover:text-white'
@@ -50,7 +50,7 @@
     </div>
 
     <!-- Pages Table -->
-    <div class="bg-brand-surface border border-brand-border overflow-hidden">
+    <div class="bg-brand-surface border border-brand-border overflow-x-auto -webkit-overflow-scrolling-touch">
       
       <div v-if="loading" class="text-center py-20 text-brand-gold font-mono text-xs uppercase tracking-widest">
         Loading Pages from MongoDB...
@@ -60,7 +60,7 @@
         No pages matching your filter.
       </div>
 
-      <table v-else class="w-full text-left text-xs">
+      <table v-else class="w-full text-left text-xs min-w-[700px]">
         <thead class="bg-[#161616] text-gray-400 uppercase tracking-wider border-b border-brand-border">
           <tr>
             <th class="py-3.5 px-4">Page Title & Navigation Item</th>
@@ -127,7 +127,7 @@
       class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto"
       @click.self="showModal = false"
     >
-      <div class="w-full max-w-2xl bg-brand-surface border border-brand-border p-6 sm:p-8 space-y-6 shadow-2xl relative">
+      <div class="w-full max-w-2xl bg-brand-surface border border-brand-border p-4 sm:p-8 space-y-4 sm:space-y-6 shadow-2xl relative max-h-[92vh] overflow-y-auto">
         <div class="absolute top-0 left-0 right-0 h-1 bg-brand-gold"></div>
 
         <div class="flex items-center justify-between border-b border-brand-border pb-4">

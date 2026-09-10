@@ -1,13 +1,41 @@
 <template>
-  <aside class="w-64 bg-black border-r border-brand-border flex flex-col justify-between p-4 shrink-0 min-h-[calc(100vh-4rem)]">
-    
+  <!-- Mobile Backdrop Overlay -->
+  <div
+    v-if="isOpen"
+    @click="$emit('close')"
+    class="fixed inset-0 bg-black/80 backdrop-blur-xs z-40 lg:hidden transition-opacity"
+  ></div>
+
+  <!-- Sidebar Drawer / Column -->
+  <aside
+    :class="[
+      'fixed lg:static top-16 bottom-0 left-0 z-50 w-64 bg-black border-r border-brand-border flex flex-col justify-between p-4 shrink-0 transition-transform duration-300 ease-in-out max-h-[calc(100vh-4rem)] overflow-y-auto',
+      isOpen ? 'translate-x-0 shadow-2xl' : '-translate-x-full lg:translate-x-0'
+    ]"
+  >
     <div class="space-y-1">
+      <!-- Mobile Close Header -->
+      <div class="flex items-center justify-between lg:hidden pb-3 mb-2 border-b border-brand-border">
+        <span class="text-xs font-bold text-white uppercase tracking-wider">Navigation Menu</span>
+        <button
+          @click="$emit('close')"
+          type="button"
+          class="text-gray-400 hover:text-brand-gold p-1 rounded"
+          aria-label="Close Navigation"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
       <div class="text-[10px] font-bold text-gray-500 uppercase tracking-widest px-3 py-2">
         Core Management
       </div>
 
       <router-link
         to="/admin"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -19,6 +47,7 @@
 
       <router-link
         to="/admin/pages"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path.startsWith('/admin/pages') ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -30,6 +59,7 @@
 
       <router-link
         to="/admin/seo"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin/seo' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -41,6 +71,7 @@
 
       <router-link
         to="/admin/blogs"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin/blogs' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -52,6 +83,7 @@
 
       <router-link
         to="/admin/media"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin/media' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -63,6 +95,7 @@
 
       <router-link
         to="/admin/leads"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin/leads' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -74,6 +107,7 @@
 
       <router-link
         to="/admin/settings"
+        @click="$emit('close')"
         class="flex items-center gap-3 px-3 py-2.5 rounded text-xs font-medium transition-colors"
         :class="$route.path === '/admin/settings' ? 'bg-brand-gold text-black font-bold' : 'text-gray-300 hover:bg-[#181818] hover:text-white'"
       >
@@ -86,13 +120,24 @@
     </div>
 
     <!-- MongoDB Status Footer -->
-    <div class="p-3 bg-[#121212] border border-brand-border rounded text-[11px] text-gray-400 space-y-1">
+    <div class="mt-4 p-3 bg-[#121212] border border-brand-border rounded text-[11px] text-gray-400 space-y-1 shrink-0">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
         <span class="text-white font-medium">MongoDB Connected</span>
       </div>
-      <p class="text-[10px] text-gray-500">Port 5000 • Live Sync</p>
+      <p class="text-[10px] text-gray-500">Live Sync Active</p>
     </div>
 
   </aside>
 </template>
+
+<script setup>
+defineProps({
+  isOpen: {
+    type: Boolean,
+    default: false
+  }
+});
+
+defineEmits(['close']);
+</script>

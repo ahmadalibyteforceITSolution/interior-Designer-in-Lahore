@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="bg-brand-surface border border-brand-border overflow-hidden">
+    <div class="bg-brand-surface border border-brand-border overflow-x-auto -webkit-overflow-scrolling-touch">
       <div v-if="loading" class="text-center py-16 text-brand-gold font-mono text-xs">
         Loading Inquiries...
       </div>
@@ -25,7 +25,7 @@
         No leads received yet.
       </div>
 
-      <table v-else class="w-full text-left text-xs">
+      <table v-else class="w-full text-left text-xs min-w-[700px]">
         <thead class="bg-[#161616] text-gray-400 uppercase tracking-wider border-b border-brand-border">
           <tr>
             <th class="py-3 px-4">Client Name</th>

@@ -20,25 +20,25 @@
         </h1>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3 w-full sm:w-auto">
         <a
           :href="`/${page.slug === 'home' ? '' : page.slug}`"
           target="_blank"
-          class="px-4 py-2 border border-brand-border text-gray-300 hover:text-brand-gold hover:border-brand-gold text-xs font-bold uppercase rounded transition-colors"
+          class="px-3 sm:px-4 py-1.5 sm:py-2 border border-brand-border text-gray-300 hover:text-brand-gold hover:border-brand-gold text-[11px] sm:text-xs font-bold uppercase rounded transition-colors"
         >
           View Live Page
         </a>
         <button
           v-if="!isProtected(page.slug)"
           @click="handleDelete"
-          class="px-3 py-2 border border-red-900/60 text-red-400 hover:bg-red-950/50 text-xs font-bold uppercase rounded transition-colors"
+          class="px-2.5 sm:px-3 py-1.5 sm:py-2 border border-red-900/60 text-red-400 hover:bg-red-950/50 text-[11px] sm:text-xs font-bold uppercase rounded transition-colors"
         >
           Delete Page
         </button>
         <button
           @click="saveChanges"
           :disabled="saving"
-          class="px-6 py-2 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow disabled:opacity-50 flex items-center gap-2"
+          class="px-4 sm:px-6 py-1.5 sm:py-2 bg-brand-gold hover:bg-brand-gold-light text-black text-[11px] sm:text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow disabled:opacity-50 flex items-center gap-2 ml-auto sm:ml-0"
         >
           <span v-if="saving">SAVING TO MONGODB...</span>
           <span v-else>SAVE ALL CHANGES</span>
@@ -47,13 +47,13 @@
     </div>
 
     <!-- Section Navigation Tabs -->
-    <div class="flex flex-wrap gap-2 border-b border-brand-border pb-3 text-xs font-bold uppercase tracking-wider">
+    <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 border-b border-brand-border text-xs font-bold uppercase tracking-wider -webkit-overflow-scrolling-touch">
       <button
         v-for="tab in tabs"
         :key="tab.id"
         @click="activeTab = tab.id"
         :class="[
-          'px-4 py-2 transition-colors rounded-sm',
+          'px-3 sm:px-4 py-1.5 sm:py-2 transition-colors rounded-sm whitespace-nowrap shrink-0 text-[11px] sm:text-xs',
           activeTab === tab.id
             ? 'bg-brand-gold text-black shadow-gold-glow'
             : 'bg-[#181818] text-gray-300 hover:bg-[#252525]'

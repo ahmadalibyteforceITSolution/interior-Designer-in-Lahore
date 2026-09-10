@@ -21,7 +21,7 @@
     </div>
 
     <!-- Blogs List -->
-    <div class="bg-brand-surface border border-brand-border overflow-hidden">
+    <div class="bg-brand-surface border border-brand-border overflow-x-auto -webkit-overflow-scrolling-touch">
       <div v-if="loading" class="text-center py-16 text-brand-gold text-xs font-mono">
         Loading Articles...
       </div>
@@ -30,7 +30,7 @@
         No articles found. Click "+ Write New Article" to publish your first post.
       </div>
 
-      <table v-else class="w-full text-left text-xs">
+      <table v-else class="w-full text-left text-xs min-w-[650px]">
         <thead class="bg-[#161616] text-gray-400 uppercase tracking-wider border-b border-brand-border">
           <tr>
             <th class="py-3 px-4">Article Title</th>
@@ -78,7 +78,7 @@
       v-if="isModalOpen"
       class="fixed inset-0 z-50 overflow-y-auto bg-black/85 flex items-center justify-center p-4"
     >
-      <div class="bg-brand-surface border border-brand-border w-full max-w-3xl p-6 relative max-h-[90vh] overflow-y-auto space-y-4 text-xs">
+      <div class="bg-brand-surface border border-brand-border w-full max-w-3xl p-4 sm:p-6 relative max-h-[92vh] overflow-y-auto space-y-4 text-xs">
         <div class="flex items-center justify-between border-b border-brand-border pb-3">
           <h3 class="text-base font-heading font-bold text-white uppercase">
             {{ isEditing ? 'Edit Article' : 'Write New Article' }}

@@ -3,8 +3,8 @@
     "slug": "home",
     "title": "Home",
     "category": "main",
-    "metaTitle": "Spaces & Places | Interior Designer & Architects in Lahore",
-    "metaDescription": "Spaces & Places is Lahore's premier interior design, architectural planning, and turnkey construction studio. From luxury villas to commercial offices, explore our bespoke designs.",
+    "metaTitle": "Interior Designer and Architects in Lahore | Spaces & Places",
+    "metaDescription": "Spaces & Places is Lahore's premier architectural and luxury interior design studio located in DHA Phase 6. We craft bespoke residential and commercial spaces.",
     "focusKeywords": "Interior Designer Lahore, Architects in Lahore, House Construction Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/",
     "ogImage": "/uploads/living-eye-level.jpg",
@@ -147,37 +147,38 @@
       "subtitle": "Book a discovery session with our lead architects and interior styling consultants in Lahore.",
       "buttonText": "BOOK A CONSULTATION",
       "buttonLink": "/contact"
-    }
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "about-us",
     "title": "About Us",
     "category": "main",
-    "metaTitle": "About Spaces & Places | Top Architects & Interior Designers in Lahore",
-    "metaDescription": "Discover the story behind Spaces & Places. Leading Lahore architectural design studio, luxury interior specialists, and premium construction firm with over a decade of excellence.",
+    "metaTitle": "About Spaces & Places | Leading Architectural Atelier in Lahore",
+    "metaDescription": "Discover Spaces & Places, Lahore's leading architectural atelier and interior design studio crafting timeless luxury residences and commercial headquarters.",
     "focusKeywords": "About Spaces & Places, Lahore Interior Designers, Top Architects Pakistan, Construction Studio Lahore",
     "canonicalUrl": "https://spacesandplaces.com.pk/about-us",
     "ogImage": "/uploads/01-01-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "OUR HERITAGE & VISION",
+      "badge": "ABOUT OUR ATELIER",
       "title": "CRAFTING TIMELESS ARCHITECTURE & REFINED INTERIORS",
-      "subtitle": "Over 12 years of delivering transcendent spaces that celebrate Pakistani architectural heritage with modern Scandinavian and European luxury.",
+      "subtitle": "A multidisciplinary team of licensed architects, interior designers, structural engineers, and master craftsmen headquartered in DHA Phase 6, Lahore.",
       "bgImage": "/uploads/01-01-8.jpg",
-      "ctaText": "MEET OUR TEAM",
+      "ctaText": "EXPLORE OUR PHILOSOPHY",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "OUR PHILOSOPHY",
-      "title": "Where Creative Inspiration Meets Precision Engineering",
-      "subtitle": "We believe architecture is not merely about erecting walls; it is about orchestrating light, volume, materials, and human experience.",
-      "paragraph1": "Founded in Lahore, Spaces & Places was born out of a desire to eliminate the traditional disconnect between architectural blueprints, construction contractors, and interior finishers. Our multidisciplinary studio bridges all three domains seamlessly.",
-      "paragraph2": "Whether envisioning a private palace in DHA Phase 6, an innovative tech incubator in Gulberg, or a bespoke boutique hotel, our team applies rigorous thermodynamic analysis, acoustic modeling, and bespoke material craftsmanship to every square foot.",
+      "badge": "OUR HERITAGE",
+      "title": "Redefining Architectural Luxury Across Pakistan",
+      "subtitle": "Precision engineering united with classical craftsmanship.",
+      "paragraph1": "Founded with a singular vision to elevate architectural standards in Lahore, Spaces & Places provides turnkey design, structural construction, and bespoke interior services. We transform residential plots into generational family sanctuaries and raw commercial buildings into dynamic brand headquarters.",
+      "paragraph2": "Our philosophy balances Scandinavian minimalism, classical proportion, and thermodynamic climate adaptability tailored specifically for Lahore’s seasonal climate.",
       "highlights": [
-        "Over 14+ International & Domestic Architectural Honors",
-        "Full In-House Workshop for Joinery, Metalwork, and Fine Upholstery",
-        "Dedicated Structural Engineers & Project Management Experts",
-        "Sustainable Green Building & Energy Efficient Passive Cooling"
+        "Chartered PCATP licensed architects and PEC certified civil engineers",
+        "Over a decade of landmark projects delivered in DHA, Bahria Town, and Gulberg",
+        "Complete turnkey accountability from preliminary 3D modeling to final handover",
+        "In-house custom joinery atelier producing heirloom-quality furniture"
       ],
       "image": "/uploads/01-06-6.jpg"
     },
@@ -246,37 +247,38 @@
       "subtitle": "Contact us today to discuss your prospective residential or commercial endeavor.",
       "buttonText": "GET IN TOUCH",
       "buttonLink": "/contact"
-    }
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "our-clients",
     "title": "Our Clients",
     "category": "main",
-    "metaTitle": "Our Prestigious Clients | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Explore the corporate enterprises, commercial brands, and private homeowners who have trusted Spaces & Places for architectural planning and interior execution.",
+    "metaTitle": "Our Esteemed Corporate & Private Clients | Spaces & Places Lahore",
+    "metaDescription": "Explore the esteemed commercial enterprises, luxury developers, and private villa owners who trust Spaces & Places for architectural and interior excellence.",
     "focusKeywords": "Spaces and Places Clients, Corporate Interior Clients Lahore, Commercial Architecture Portfolio",
     "canonicalUrl": "https://spacesandplaces.com.pk/our-clients",
     "ogImage": "/uploads/01-03-7.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "TRUSTED BY INDUSTRY LEADERS",
+      "badge": "CLIENT PORTFOLIO",
       "title": "OUR ESTEEMED CORPORATE & COMMERCIAL CLIENTS",
-      "subtitle": "From multinational corporations to boutique luxury brands, we take pride in delivering architectural excellence that enhances enterprise value.",
+      "subtitle": "Trusted by Pakistan’s leading corporations, luxury retail brands, boutique hospitality groups, and prestigious residential homeowners.",
       "bgImage": "/uploads/01-03-7.jpg",
-      "ctaText": "START A PROJECT",
+      "ctaText": "PARTNER WITH US",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "COLLABORATIONS",
-      "title": "Building Longstanding Partnerships Built on Integrity",
-      "subtitle": "Our client roster includes premier names across industrial manufacturing, banking, hospitality, automotive, and fashion retail.",
-      "paragraph1": "We have executed state-of-the-art corporate offices, showroom spaces, factory headquarters, and fine dining establishments for top-tier organizations in Lahore and throughout Pakistan.",
-      "paragraph2": "Every commercial project is engineered to foster brand presence, employee productivity, and customer engagement through purposeful architectural zoning and acoustic balance.",
+      "badge": "COLLABORATIVE EXCELLENCE",
+      "title": "Built on Enduring Trust, Discretion, and Superior Craft",
+      "subtitle": "Delivering landmark projects with unyielding commitment to deadlines and BOQ transparency.",
+      "paragraph1": "At Spaces & Places, client relationships are our greatest asset. We have proudly served executive leaders, multinational corporations, boutique retailers, and discerning private families across Lahore, Islamabad, and Karachi.",
+      "paragraph2": "Our dedicated client liaison team ensures complete transparency at every stage through weekly progress reports, 3D visual checkpoints, and strict compliance with agreed financial milestones.",
       "highlights": [
-        "Over 85+ Commercial & Corporate Enterprises Served",
-        "Specialized Healthcare & Hospitality Interior Expertise",
-        "ISO Compliant Fire-Safety & Energy Management Implementations",
-        "High-Speed Fast-Track Construction for Urgent Commercial Launches"
+        "Over 150+ successful residential and commercial deliveries across Punjab",
+        "Confidential non-disclosure agreements (NDA) for high-profile private clients",
+        "Dedicated project manager assigned as a single point of contact",
+        "Post-handover warranty and lifetime maintenance support agreements"
       ],
       "image": "/uploads/01-02-10.jpg"
     },
@@ -333,37 +335,38 @@
       "subtitle": "Schedule a discovery meeting for your corporate office, retail brand, or hospitality property.",
       "buttonText": "CONTACT COMMERCIAL TEAM",
       "buttonLink": "/contact"
-    }
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "contact",
     "title": "Contact Us",
     "category": "main",
-    "metaTitle": "Contact Spaces & Places | Architecture & Interior Design Studio Lahore",
-    "metaDescription": "Get in touch with Spaces & Places in Lahore. Call +92 300 1999967 or visit our studio in Gulberg/DHA for architectural design, interior planning, and turnkey construction consultations.",
+    "metaTitle": "Contact Spaces & Places | DHA Phase 6 Lahore Architecture Studio",
+    "metaDescription": "Get in touch with Spaces & Places at 5CCA, 5th Floor, DHA Phase 6 Lahore. Call +92 300 1999967 or schedule a private architectural consultation.",
     "focusKeywords": "Contact Spaces and Places, Architecture Office Lahore, Interior Designer Phone Lahore, Lahore Architect Appointment",
     "canonicalUrl": "https://spacesandplaces.com.pk/contact",
     "ogImage": "/uploads/living-eye-level.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "CONNECT WITH US",
+      "badge": "GET IN TOUCH",
       "title": "LET'S DISCUSS YOUR NEXT ARCHITECTURAL MASTERPIECE",
-      "subtitle": "Our studio is ready to translate your ambitions into inspiring physical spaces. Reach out by phone, WhatsApp, or schedule an in-person consultation.",
+      "subtitle": "Visit our design atelier in DHA Phase 6, Lahore, or schedule a private consultation with our principal architects.",
       "bgImage": "/uploads/living-eye-level.jpg",
-      "ctaText": "CALL +92 300 1999967",
+      "ctaText": "CALL NOW: +92 300 1999967",
       "ctaLink": "tel:+923001999967"
     },
     "overview": {
-      "badge": "VISIT OUR STUDIO",
-      "title": "Experience Material Swatches, 3D Walkthroughs & Design Consultations",
-      "subtitle": "Conveniently located in Lahore with private meeting lounges for residential and commercial client consultations.",
-      "paragraph1": "Whether you are constructing a new 1-Kanal villa in DHA, renovating an executive corporate floor in Gulberg, or looking for bespoke furniture, our senior principals are available to provide direct technical input.",
-      "paragraph2": "Fill out our inquiry form or give us a direct call. We respond to all inquiries within 24 business hours with initial project scope evaluations and consultation timings.",
+      "badge": "CONSULTATION & VISIT",
+      "title": "Start Your Design Journey With Our Creative Directors",
+      "subtitle": "Personalized consultations at our studio or on your project site.",
+      "paragraph1": "Whether you are embarking on constructing a new luxury villa, renovating an executive corporate floor, or curating custom furniture pieces, our team is ready to assist you with tailored advice, preliminary feasibility studies, and cost estimates.",
+      "paragraph2": "Located conveniently at 5CCA, 5th Floor, Block C, DHA Phase 6, Lahore, our studio showcases live material libraries, marble samples, acoustic textures, and lighting demonstrations.",
       "highlights": [
-        "Direct Access to Principal Architects & Interior Leads",
-        "Comprehensive Initial Feasibility & Cost Assessment",
-        "Sample Library with Hundreds of Imported & Local Finishes",
-        "Virtual Zoom Consultations Available for Overseas Pakistanis"
+        "Studio Location: 5CCA, 5th Floor, Block C, DHA Phase 6, Lahore",
+        "Direct Phone / WhatsApp: +92 300 1999967",
+        "Official Email: contact@spacezandplaces.com",
+        "Open Monday to Saturday: 10:00 AM – 7:00 PM"
       ],
       "image": "/uploads/01-01-8.jpg"
     },
@@ -399,7 +402,8 @@
       "subtitle": "Give us a call directly at +92 300 1999967 to speak with our lead architect.",
       "buttonText": "CALL NOW",
       "buttonLink": "tel:+923001999967"
-    }
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "privacy-policy",
@@ -556,470 +560,511 @@
     "slug": "residential-interior",
     "title": "Residential Interior",
     "category": "interior-design",
-    "metaTitle": "Residential Interior in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Residential Interior in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Luxury Residential Interior Design Lahore | Spaces & Places",
+    "metaDescription": "Experience Lahore's finest residential interior design studio. Specializing in luxury villas, modern penthouses, and heritage residences in DHA and Gulberg.",
     "focusKeywords": "Residential Interior Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/residential-interior",
     "ogImage": "/uploads/01-01-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
+      "badge": "PRIVATE RESIDENCES & VILLAS",
       "title": "LUXURY RESIDENTIAL INTERIOR DESIGN IN LAHORE",
-      "subtitle": "Creating serene, opulent, and functionally optimized homes that reflect your family's personality and refined taste.",
+      "subtitle": "Curating bespoke private residences, penthouses, and heritage mansions across DHA, Gulberg, and Cantt.",
       "bgImage": "/uploads/01-01-8.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "BOOK A RESIDENTIAL CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Residential Interior in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Residential Interior studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "BESPOKE LIVING",
+      "title": "Private Sanctuaries Crafted With Timeless Elegance",
+      "subtitle": "Balancing intimate warmth with majestic spatial proportion.",
+      "paragraph1": "At Spaces & Places, residential interior design is an art of personal storytelling. We collaborate with discerning homeowners across Lahore to transform raw spaces into timeless sanctuaries that reflect sophistication, warmth, and prestige.",
+      "paragraph2": "From majestic double-height drawing rooms in DHA Phase 6 to serene master suites in Gulberg, our designers integrate imported Italian Calacatta marble, bespoke acoustic millwork, layered architectural lighting, and tailored textiles.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Custom architectural ceiling layouts & recessed cove illumination",
+        "Imported Italian marble flooring with moisture-barrier underlayment",
+        "Curated walk-in closets with integrated LED display cabinetry",
+        "Acoustically isolated private cinema lounges & executive home libraries"
       ],
       "image": "/uploads/01-01-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "res-spatial",
+        "title": "Bespoke Spatial Zoning & Layouts",
+        "subtitle": "Flow, Proportion, and Intimacy",
+        "description": "Every square foot is calibrated to serve your family lifestyle with seamless transitions between formal entertainment and private relaxation.",
+        "image": "/uploads/01-01-2.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Double-Height Drawing Room Architecture with Dramatic Statement Walls",
+          "Open-Plan European Kitchen & Dirty Kitchen Functional Separation",
+          "Private Family Lounges & Sunlight-Drenched Indoor Courtyards",
+          "Ensuite Master Bedrooms with Private Open-Air Terraces"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "res-materials",
+        "title": "Luxury Materials & Artisanal Joinery",
+        "subtitle": "Heirloom Craftsmanship & Noble Textures",
+        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings built for longevity and distinction.",
+        "image": "/uploads/01-01-14.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Kiln-Dried Burmese Teak & American Walnut Architectural Paneling",
+          "Book-Matched Italian Statuario, Bottochino, and Onyx Slabs",
+          "PVD Titanium Gold Accents & Concealed German Magnetic Hardware",
+          "Custom High-Thread Count Linen, Silk, and Velvet Wall Upholstery"
+        ]
+      },
+      {
+        "id": "res-smarthome",
+        "title": "Smart Home & Climate Automation",
+        "subtitle": "Effortless Living at Your Fingertips",
+        "description": "Invisible technology that elevates your daily comfort while preserving clean architectural lines.",
+        "image": "/uploads/01-01-15.jpg",
+        "points": [
+          "Automated Crestron / Lutron Ambient Lighting & Scene Controls",
+          "Concealed Duct Inverter AC Systems with Fresh Air Heat Recovery",
+          "Motorized Somfy Acoustic Drapery & Solar Sunscreen Sheers",
+          "Multi-Zone Architectural Sound Distribution by Bang & Olufsen / Sonos"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Residential Interior project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "How long does a full residential interior project take in Lahore?",
+        "answer": "A standard 1-Kanal villa typically requires 4 to 6 weeks for complete 3D architectural schematics and BOQ estimation, followed by 12 to 16 weeks for turnkey on-site execution and artisanal millwork installation."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you design custom furniture specifically tailored for our rooms?",
+        "answer": "Yes. Spaces & Places operates an in-house bespoke furniture atelier in Lahore where our master craftsmen handcraft all sofas, dining tables, beds, and consoles to your exact room dimensions and fabric specifications."
+      },
+      {
+        "question": "Do you work with clients who already have completed gray structures?",
+        "answer": "Absolutely. Over 60% of our residential interior clients come to us after their gray structure is erected. We review room flow, optimize MEP conduit layouts, and execute all luxury finishes from plastering to turnkey decor."
       }
     ],
     "gallery": [
       {
-        "title": "Residential Interior - Project View 1",
+        "title": "DHA Phase 6 Villa - Double Height Drawing Room",
         "image": "/uploads/01-01-8.jpg",
-        "category": "interior-design",
-        "alt": "Residential Interior"
+        "category": "Living Areas"
       },
       {
-        "title": "Residential Interior - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "interior-design",
-        "alt": "Residential Interior"
+        "title": "Gulberg Luxury Residence - Master Suite",
+        "image": "/uploads/01-01-2.jpg",
+        "category": "Bedrooms"
+      },
+      {
+        "title": "Lake City Estate - Contemporary Italian Kitchen",
+        "image": "/uploads/01-01-14.jpg",
+        "category": "Kitchens"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Residential Interior?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Ready to Transform Your Villa into an Architectural Masterpiece?",
+      "subtitle": "Schedule a private consultation at our DHA Phase 6 design studio with our principal interior architects.",
+      "buttonText": "SCHEDULE RESIDENTIAL CONSULTATION",
+      "buttonLink": "/contact",
+      "badge": "BEGIN YOUR SANCTUARY"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "corporate-interior",
     "title": "Corporate Interior",
     "category": "interior-design",
-    "metaTitle": "Corporate Interior in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Corporate Interior in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Executive Corporate Interior Design in Lahore | Spaces & Places",
+    "metaDescription": "Elevate your enterprise workplace with Spaces & Places. Specializing in executive boardrooms, tech campuses, and corporate headquarters in Lahore.",
     "focusKeywords": "Corporate Interior Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/corporate-interior",
     "ogImage": "/uploads/01-03-7.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
+      "badge": "WORKPLACE ARCHITECTURE",
       "title": "EXECUTIVE CORPORATE INTERIORS IN LAHORE",
-      "subtitle": "Designing intelligent corporate environments that stimulate innovation, impress global clients, and enhance workforce productivity.",
+      "subtitle": "Designing dynamic headquarters, executive suites, and collaborative environments that empower enterprise culture.",
       "bgImage": "/uploads/01-03-7.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "CONSULT FOR CORPORATE OFFICES",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Corporate Interior in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Corporate Interior studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "ENTERPRISE ENVIRONMENTS",
+      "title": "High-Performance Workplaces Engineered For Innovation",
+      "subtitle": "Synthesizing ergonomic performance, brand identity, and executive presence.",
+      "paragraph1": "In today’s competitive landscape, your corporate environment directly impacts employee productivity, client perception, and brand stature. Spaces & Places designs cutting-edge corporate headquarters across Lahore’s primary business districts including Gulberg, DHA, and Johar Town.",
+      "paragraph2": "We combine biophilic design elements with advanced acoustic engineering, modular flexible layouts, and state-of-the-art audiovisual integration to build workspaces that foster creativity, focused concentration, and executive decision-making.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Acoustic-engineered executive boardrooms with 4K telepresence suites",
+        "Ergonomic open-plan workstations with BIFMA-certified task seating",
+        "Dynamic reception lobbies featuring branded architectural accent walls",
+        "Sound-dampened focus pods & wellness break-out lounges"
       ],
       "image": "/uploads/01-03-7.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
-        "image": "/uploads/01-03-7.jpg",
+        "id": "corp-boardrooms",
+        "title": "Executive Boardrooms & Conference Facilities",
+        "subtitle": "Commanding Decision-Making Hubs",
+        "description": "High-impact presentation suites equipped with seamless video conferencing, acoustic isolation, and executive dignity.",
+        "image": "/uploads/01-03-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Concealed AV Integration with Automated Motorized Shure Microphones",
+          "Double-Glazed Acoustic Switchable Smart Glass Partitions (PDLC)",
+          "Bespoke 24-Seater Solid Oak Conference Tables with Hidden Wire Ports",
+          "Lutron Automated Presentation Dimming & One-Touch Meeting Presets"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "corp-agile",
+        "title": "Collaborative & Agile Workstations",
+        "subtitle": "Adaptive Flexibility for High-Growth Teams",
+        "description": "Optimized open-plan engineering that prevents visual distraction while maximizing teamwork and airflow.",
+        "image": "/uploads/01-03-7.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Modular Hot-Desking Systems with Built-In Wire Management Raceways",
+          "Biophilic Planter Dividers & Acoustic Living Moss Accent Walls",
+          "Sound-Absorbing PET Felt Baffle Ceiling Systems (NRC 0.85+)",
+          "High-Traffic Anti-Static Carpet Tile Flooring with 15-Year Wear Rating"
+        ]
+      },
+      {
+        "id": "corp-reception",
+        "title": "Reception Lobbies & Brand Experience",
+        "subtitle": "Unforgettable First Impressions",
+        "description": "Sculptural architectural reception desks and waiting lounges that embody your brand authority.",
+        "image": "/uploads/01-03-9.jpg",
+        "points": [
+          "Custom Backlit Translucent Onyx & Brushed Brass Reception Desks",
+          "3D Corporate Identity Signage & Architectural Linear Illumination",
+          "VIP Client Hospitality Lounges with Integrated Italian Espresso Bars",
+          "Secure RFID Access Control & High-Speed Biometric Turnstile Gates"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Corporate Interior project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "Can you execute corporate fit-outs during night hours or weekends?",
+        "answer": "Yes. To prevent disruption to your day-to-day business operations, our site teams can work in scheduled night shifts and weekend phases with strict noise and dust abatement controls."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "What acoustic ratings do you guarantee in conference rooms?",
+        "answer": "We design executive meeting spaces to achieve STC 50+ acoustic isolation, using double-glazed laminated glass, sound-damped HVAC transfer boots, and perimeter acoustic drop seals."
+      },
+      {
+        "question": "Do you handle IT networking, server room cooling, and biometric access?",
+        "answer": "Yes. Our in-house MEP and low-voltage engineers design and deploy complete Cat6A cabling, server room precision cooling (CRAC), fire suppression (FM200), and biometric access control systems."
       }
     ],
     "gallery": [
       {
-        "title": "Corporate Interior - Project View 1",
-        "image": "/uploads/01-03-7.jpg",
-        "category": "interior-design",
-        "alt": "Corporate Interior"
+        "title": "Gulberg Corporate Tower - Executive Boardroom",
+        "image": "/uploads/01-03-8.jpg",
+        "category": "Boardrooms"
       },
       {
-        "title": "Corporate Interior - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "interior-design",
-        "alt": "Corporate Interior"
+        "title": "DHA Financial Center - Open Agile Hub",
+        "image": "/uploads/01-03-7.jpg",
+        "category": "Workspaces"
+      },
+      {
+        "title": "Tech Headquarters - Double Height Atrium Reception",
+        "image": "/uploads/01-03-9.jpg",
+        "category": "Lobbies"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Corporate Interior?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Empower Your Team with a World-Class Corporate Headquarters",
+      "subtitle": "Schedule an executive workplace consultation to explore space planning, 3D designs, and turnkey BOQ estimates.",
+      "buttonText": "REQUEST CORPORATE FIT-OUT PROPOSAL",
+      "buttonLink": "/contact",
+      "badge": "ELEVATE YOUR WORKPLACE"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "commercial-interior",
     "title": "Commercial Interior",
     "category": "interior-design",
-    "metaTitle": "Commercial Interior in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Commercial Interior in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Commercial & Retail Interior Designers in Lahore | Spaces & Places",
+    "metaDescription": "Captivate shoppers and maximize retail sales with Spaces & Places. Designing flagship boutiques, shopping plazas, and retail stores in Lahore.",
     "focusKeywords": "Commercial Interior Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/commercial-interior",
     "ogImage": "/uploads/Display-9.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
+      "badge": "RETAIL & COMMERCIAL SPACES",
       "title": "HIGH-IMPACT COMMERCIAL INTERIORS IN LAHORE",
-      "subtitle": "Strategic retail and commercial space architecture engineered to captivate shoppers, amplify brand identity, and maximize profitability.",
+      "subtitle": "Captivating retail flagship stores, luxury showrooms, and commercial venues built to maximize footfall and conversions.",
       "bgImage": "/uploads/Display-9.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "DISCUSS COMMERCIAL PROJECT",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Commercial Interior in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Commercial Interior studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "RETAIL EXCELLENCE",
+      "title": "Immersive Commercial Architecture That Drives Footfall",
+      "subtitle": "Strategic customer journey mapping merged with sculptural merchandising displays.",
+      "paragraph1": "Retail and commercial interiors require an exacting synergy of psychological customer flow, dramatic illumination, and durable high-traffic finishes. Spaces & Places designs flagship stores that entice shoppers, prolong dwell time, and drive higher transaction values.",
+      "paragraph2": "We have executed premier luxury retail outlets on MM Alam Road, DHA Y-Block, and Packages Mall, crafting bespoke display gondolas, seamless cashier counters, and captivating window facades.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Psychological customer circulation mapping designed to eliminate cold zones",
+        "Museum-grade 95+ CRI high-accent retail display illumination",
+        "Heavy-duty PEI-5 commercial porcelain flooring and scratch-resistant quartz",
+        "Full compliance with mall management and local building safety codes"
       ],
       "image": "/uploads/Display-9.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "comm-journey",
+        "title": "Customer Journey & Circulation Mapping",
+        "subtitle": "Intuitive Navigation & Merchandising Flow",
+        "description": "We orchestrate natural customer paths from the threshold to key product showcases and the point of sale.",
         "image": "/uploads/Display-9.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Focal Entry Portals with High-Impact Seasonal Window Displays",
+          "Loop Layout Circulation Ensuring Exposure to 100% of Inventory",
+          "Strategically Positioned Cash Wrap Counters with Impulse Zones",
+          "Spacious Fitting Lounges with Flattering 3000K Diffused Mirrors"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "comm-lighting",
+        "title": "High-CRI Retail Display Lighting",
+        "subtitle": "Color Accuracy & Dramatic Focal Accents",
+        "description": "Precision illumination highlights fabrics, textures, and luxury merchandise without harsh glare or heat generation.",
+        "image": "/uploads/01-01-9.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "High-CRI 97+ Color True LED Track Lighting with Interchangeable Lenses",
+          "Concealed Under-Shelf Micro Linear Lighting with Zero Visible Wires",
+          "Accent Backlit Acrylic Panels for Branding & Campaign Graphics",
+          "Daylight Sensor Dimming for Energy Conservation and Ambience Control"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Commercial Interior project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "How fast can you deliver a retail store fit-out before launch dates?",
+        "answer": "We understand retail deadlines are tied to expensive rental overheads. We routinely deliver complete 2,000 to 5,000 sq.ft. retail fit-outs in 30 to 45 calendar days through dual-shift site scheduling."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do you manufacture custom display racks and glass vitrines?",
+        "answer": "Yes. All glass display cases, motorized revolving showcases, and brass-trimmed merchandising gondolas are precision fabricated in our specialized manufacturing facility."
       }
     ],
     "gallery": [
       {
-        "title": "Commercial Interior - Project View 1",
+        "title": "MM Alam Road - Luxury Fashion Flagship",
         "image": "/uploads/Display-9.jpg",
-        "category": "interior-design",
-        "alt": "Commercial Interior"
+        "category": "Retail"
       },
       {
-        "title": "Commercial Interior - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "interior-design",
-        "alt": "Commercial Interior"
+        "title": "DHA Phase 5 - Designer Eyewear Boutique",
+        "image": "/uploads/01-01-9.jpg",
+        "category": "Boutiques"
+      },
+      {
+        "title": "Mall of Lahore - High-End Jewelry Showroom",
+        "image": "/uploads/01-02-10.jpg",
+        "category": "Showrooms"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Commercial Interior?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Create an Unforgettable Commercial Destination",
+      "subtitle": "Partner with our retail interior specialists to design a commercial space that commands attention.",
+      "buttonText": "SCHEDULE COMMERCIAL CONSULTATION",
+      "buttonLink": "/contact",
+      "badge": "BOOST RETAIL CONVERSIONS"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "hospitality-interior",
     "title": "Hospitality Interior",
     "category": "interior-design",
-    "metaTitle": "Hospitality Interior in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Hospitality Interior in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Luxury Hospitality & Hotel Interior Design | Spaces & Places Lahore",
+    "metaDescription": "Spaces & Places crafts luxury boutique hotel interiors, VIP suites, and resort atmospheres in Pakistan. Delivering unforgettable guest experiences.",
     "focusKeywords": "Hospitality Interior Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/hospitality-interior",
     "ogImage": "/uploads/01-02-10.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "BESPOKE HOSPITALITY INTERIORS IN LAHORE",
-      "subtitle": "Elevating guest journeys through sensory design, opulent textures, and unforgettable hospitality environments.",
+      "badge": "LUXURY HOSPITALITY",
+      "title": "BOUTIQUE HOTEL & HOSPITALITY INTERIORS",
+      "subtitle": "Crafting memorable guest journeys, opulent suites, and sensory hotel lobbies in Pakistan.",
       "bgImage": "/uploads/01-02-10.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "EXPLORE HOSPITALITY SOLUTIONS",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Hospitality Interior in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Hospitality Interior studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "GUEST EXPERIENCES",
+      "title": "Sensory Environments That Define Modern Hospitality",
+      "subtitle": "Imbuing warmth, opulence, and operational efficiency into every square meter.",
+      "paragraph1": "Hospitality design requires a masterful balance of emotional storytelling and rigorous back-of-house operational efficiency. From boutique resorts to executive business hotels, Spaces & Places designs guest suites, grand lobbies, and amenity spaces that earn 5-star acclaim.",
+      "paragraph2": "We incorporate durable, stain-resistant commercial textiles, acoustic barrier construction, and customized guestroom casegoods engineered to withstand high turnover while retaining timeless grandeur.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Acoustic guestroom engineering achieving complete sound isolation from corridors",
+        "Turnkey FF&E procurement adhering strictly to international hospitality standards",
+        "Custom lighting and master bedside automation scenes for effortless guest comfort",
+        "Spa and wellness sanctuaries designed with natural stone and hydrotherapy facilities"
       ],
       "image": "/uploads/01-02-10.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "hosp-arrival",
+        "title": "Grand Arrival & Lobby Architecture",
+        "subtitle": "The First 60 Seconds of Immersion",
+        "description": "Imposing double-height lobbies, artistic water features, and welcoming concierge pods that establish immediate prestige.",
         "image": "/uploads/01-02-10.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Dramatic Hand-Blown Glass Chandelier Installations & Water Walls",
+          "Bespoke Concierge & Private Check-In Pods Replacing Bulky Desks",
+          "Acoustically Controlled Atrium Lounges for Intimate Conversations",
+          "Discrete Back-of-House Luggage and Service Circulation Paths"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "hosp-suites",
+        "title": "Luxury Guest Suites & Penthouses",
+        "subtitle": "Restorative Sanctuaries for the Global Traveler",
+        "description": "Meticulously planned bedrooms and spa bathrooms that deliver the ultimate in sleep comfort and rejuvenation.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Complete Acoustic Isolation (STC 62+) Between Adjoining Guestrooms",
+          "Spa Ensuite Bathrooms with Freestanding Soaking Tubs and Rain Showers",
+          "Custom Headboards with Integrated Low-Voltage USB & Touch Controls",
+          "100% Blackout Motorized Automated Drapery and Sound-Damped HVAC"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Hospitality Interior project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do your hospitality designs comply with international fire and life safety codes?",
+        "answer": "Yes. All material specifications, emergency egress routing, fire doors, sprinkler densities, and smoke evacuation plans adhere to NFPA 101 and local building authority standards."
       }
     ],
     "gallery": [
       {
-        "title": "Hospitality Interior - Project View 1",
+        "title": "Boutique Hotel - Grand Lobby Atrium",
         "image": "/uploads/01-02-10.jpg",
-        "category": "interior-design",
-        "alt": "Hospitality Interior"
+        "category": "Lobbies"
       },
       {
-        "title": "Hospitality Interior - Architectural Detail",
+        "title": "Presidential Suite - Master Living Room",
+        "image": "/uploads/01-01-8.jpg",
+        "category": "Suites"
+      },
+      {
+        "title": "Wellness Spa - Hydrotherapy Treatment Suite",
         "image": "/uploads/01-02-9.jpg",
-        "category": "interior-design",
-        "alt": "Hospitality Interior"
+        "category": "Amenities"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Hospitality Interior?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Ready to Build a Landmark Hotel Destination?",
+      "subtitle": "Schedule a confidential briefing with our hospitality design team to review master plans and FF&E budgets.",
+      "buttonText": "DISCUSS YOUR HOTEL PROJECT",
+      "buttonLink": "/contact",
+      "badge": "HOSPITALITY LEADERSHIP"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "restaurant-design",
     "title": "Restaurant Design",
     "category": "interior-design",
-    "metaTitle": "Restaurant Design in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Restaurant Design in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Restaurant & Cafe Interior Designers in Lahore | Spaces & Places",
+    "metaDescription": "Spaces & Places creates atmospheric dining spaces, fine-dining restaurants, and trendy cafes across Lahore, MM Alam Road, and DHA.",
     "focusKeywords": "Restaurant Design Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/restaurant-design",
     "ogImage": "/uploads/01-01-9.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "IMMERSIVE RESTAURANT & CAFE DESIGN IN LAHORE",
-      "subtitle": "Crafting vibrant culinary destinations where exquisite gastronomy meets unforgettable architectural atmosphere.",
+      "badge": "CULINARY ARCHITECTURE",
+      "title": "ATMOSPHERIC RESTAURANT DESIGN IN LAHORE",
+      "subtitle": "Crafting immersive dining atmospheres, acoustic balance, and high-efficiency commercial kitchens in MM Alam Road, DHA, and Gulberg.",
       "bgImage": "/uploads/01-01-9.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "START RESTAURANT PROJECT",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Restaurant Design in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Restaurant Design studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "CULINARY SPACES",
+      "title": "Dining Atmospheres That Captivate the Senses",
+      "subtitle": "Where culinary excellence meets seductive architectural lighting and acoustic harmony.",
+      "paragraph1": "A successful restaurant is an emotional performance. The lighting, seating intimacy, acoustic balance, and server circulation directly shape the diner’s perception of food and hospitality. Spaces & Places has designed some of Lahore’s most celebrated eateries.",
+      "paragraph2": "From atmospheric fine-dining steakhouses on MM Alam Road to vibrant outdoor courtyard cafes in DHA Phase 5, we engineer every millimeter—from commercial grease-trap plumbing to Instagrammable focal points.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Layered ambient 2400K–2700K low-glare lighting tuned for flattering warmth",
+        "Acoustic sound dampening ceilings ensuring energetic buzz without harsh reverberation",
+        "Commercial kitchen layout optimized for HACCP health and fire safety standards",
+        "Custom heavy-duty faux leather and stain-guarded velvet banquette seating"
       ],
       "image": "/uploads/01-01-9.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "rest-ambience",
+        "title": "Dining Room Mood & Seating Topography",
+        "subtitle": "Table Privacy & Visual Excitement",
+        "description": "We craft diverse seating experiences from cozy corner booths to dramatic central banquet tables.",
         "image": "/uploads/01-01-9.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Curved Velvet & Leather Banquettes with Ergonomic Lumbar Support",
+          "Architectural Statement Lighting & Dim-to-Warm Candlelight Simulation",
+          "Acoustically Plastered Ceilings Eliminating Noisy Dish Clatter",
+          "Instagram-Famous Feature Walls & Kinetic Floral Sculptures"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "rest-kitchen",
+        "title": "Commercial Kitchen & Service Flow",
+        "subtitle": "Zero-Collision Kitchen Logistics",
+        "description": "Industrial-grade kitchen layouts that maximize line-cook speed and ensure seamless server handoffs.",
+        "image": "/uploads/01-06-7.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "High-Grade 304 Stainless Steel Prep, Cook & Scullery Line Separation",
+          "Commercial Kitchen Hood Exhaust Systems with Electrostatic Precipitators",
+          "Heavy-Duty Anti-Bacterial Epoxy Floors with Full Trench Drain Integration",
+          "Dedicated Waitstaff Pickup Counters & Sound-Baffled Dishwasher Returns"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Restaurant Design project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do you handle commercial kitchen ventilation and gas line piping approvals?",
+        "answer": "Yes. Our specialized MEP engineers calculate exact air exchange CFM rates, hood face velocities, grease duct fire insulation, and LPG/gas manifold distribution to guarantee safety certifications."
       }
     ],
     "gallery": [
       {
-        "title": "Restaurant Design - Project View 1",
+        "title": "MM Alam Road - Fine Dining Italian Bistro",
         "image": "/uploads/01-01-9.jpg",
-        "category": "interior-design",
-        "alt": "Restaurant Design"
+        "category": "Dining"
       },
       {
-        "title": "Restaurant Design - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "interior-design",
-        "alt": "Restaurant Design"
+        "title": "DHA Phase 5 - Artisanal Specialty Cafe",
+        "image": "/uploads/01-01-11.jpg",
+        "category": "Cafes"
+      },
+      {
+        "title": "Gulberg - Rooftop Terrace Restaurant & Lounge",
+        "image": "/uploads/01-02-10.jpg",
+        "category": "Outdoor"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Restaurant Design?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Ready to Launch Lahore’s Next Iconic Restaurant?",
+      "subtitle": "Schedule a concept discovery session with our hospitality and food-service interior architects.",
+      "buttonText": "SCHEDULE RESTAURANT BRIEFING",
+      "buttonLink": "/contact",
+      "badge": "CREATE A DINING DESTINATION"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "industrial-design",
-    "title": "Industrial Design",
+    "title": "Industrial Planning",
     "category": "interior-design",
     "metaTitle": "Industrial Design in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Industrial Design in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1028,65 +1073,63 @@
     "ogImage": "/uploads/01-06-7.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "REFINED INDUSTRIAL DESIGN IN LAHORE",
-      "subtitle": "Balancing raw structural honesty with refined contemporary comforts for modern offices, creative studios, and industrial headquarters.",
+      "badge": "INDUSTRIAL PLANNING",
+      "title": "INDUSTRIAL PLANNING IN LAHORE",
+      "subtitle": "Precision industrial architecture, pharmaceutical cleanrooms, and logistics complexes across Punjab.",
       "bgImage": "/uploads/01-06-7.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Industrial Design in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Industrial Design studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Industrial Planning",
+      "subtitle": "Precision industrial architecture, pharmaceutical cleanrooms, and logistics complexes across Punjab.",
+      "paragraph1": "At Spaces & Places, our industrial planning division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Industrial Planning",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-06-7.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-industrial-design-1",
+        "title": "Key Technical Deliverables for Industrial Planning",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Industrial Planning guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-06-7.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-industrial-design-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Industrial Design project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Industrial Planning project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1104,15 +1147,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Industrial Design?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Industrial Planning Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR INDUSTRIAL PLANNING",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "corporate-design",
-    "title": "Corporate Design",
+    "title": "Corporate Architecture",
     "category": "interior-design",
     "metaTitle": "Corporate Design in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Corporate Design in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1121,65 +1165,63 @@
     "ogImage": "/uploads/01-03-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "STRATEGIC CORPORATE DESIGN IN LAHORE",
-      "subtitle": "Aligning corporate architectural spaces with brand culture, organizational agility, and talent recruitment prestige.",
+      "badge": "CORPORATE ARCHITECTURE",
+      "title": "CORPORATE ARCHITECTURE IN LAHORE",
+      "subtitle": "Modern commercial campus planning, curtain-wall facades, and sustainable corporate architecture.",
       "bgImage": "/uploads/01-03-8.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Corporate Design in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Corporate Design studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Corporate Architecture",
+      "subtitle": "Modern commercial campus planning, curtain-wall facades, and sustainable corporate architecture.",
+      "paragraph1": "At Spaces & Places, our corporate architecture division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Corporate Architecture",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-03-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-corporate-design-1",
+        "title": "Key Technical Deliverables for Corporate Architecture",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Corporate Architecture guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-03-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-corporate-design-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Corporate Design project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Corporate Architecture project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1197,9 +1239,10 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Corporate Design?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Corporate Architecture Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR CORPORATE ARCHITECTURE",
       "buttonLink": "/contact"
     }
   },
@@ -1214,65 +1257,63 @@
     "ogImage": "/uploads/01-05-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "LUXURY INTERIOR FURNISHINGS IN LAHORE",
-      "subtitle": "The finishing touch of perfection: curated fabrics, imported wall coverings, sculptural lighting, and handcrafted artisan accessories.",
+      "badge": "INTERIOR FURNISHINGS",
+      "title": "INTERIOR FURNISHINGS IN LAHORE",
+      "subtitle": "Curated drapery, imported velvets, bespoke upholstery, and tailored lighting packages.",
       "bgImage": "/uploads/01-05-6.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Interior Furnishings in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Interior Furnishings studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Interior Furnishings",
+      "subtitle": "Curated drapery, imported velvets, bespoke upholstery, and tailored lighting packages.",
+      "paragraph1": "At Spaces & Places, our interior furnishings division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Interior Furnishings",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-05-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-interior-furnishings-1",
+        "title": "Key Technical Deliverables for Interior Furnishings",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Interior Furnishings guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-05-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-interior-furnishings-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Interior Furnishings project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Interior Furnishings project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1290,9 +1331,10 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Interior Furnishings?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Interior Furnishings Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR INTERIOR FURNISHINGS",
       "buttonLink": "/contact"
     }
   },
@@ -1300,191 +1342,189 @@
     "slug": "architectural-residential-planning",
     "title": "Architectural Residential Planning",
     "category": "architectural-designs",
-    "metaTitle": "Architectural Residential Planning in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Architectural Residential Planning in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Architectural Residential Planning Lahore | Spaces & Places",
+    "metaDescription": "Expert architectural residential planning for 1-Kanal, 2-Kanal, and estate villas in DHA Lahore, Bahria Town, and LDA. Blueprints, zoning, and bylaws.",
     "focusKeywords": "Architectural Residential Planning Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/architectural-residential-planning",
     "ogImage": "/uploads/01-04-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
+      "badge": "RESIDENTIAL MASTER PLANNING",
       "title": "ARCHITECTURAL RESIDENTIAL PLANNING IN LAHORE",
-      "subtitle": "Designing intelligent, climate-responsive, and spatially luxurious residential blueprints compliant with all local building authorities.",
+      "subtitle": "Comprehensive architectural blueprints, zoning bylaws compliance, and structural layouts for 1-Kanal, 2-Kanal, and estate villas.",
       "bgImage": "/uploads/01-04-8.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "PLAN YOUR RESIDENTIAL VILLA",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Architectural Residential Planning in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Architectural Residential Planning studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "BLUEPRINT EXCELLENCE",
+      "title": "Master-Planned Residential Architecture Tailored For Generations",
+      "subtitle": "Bridging aesthetic beauty with rigorous thermodynamic orientation and structural longevity.",
+      "paragraph1": "Every great home begins with intelligent floor planning. At Spaces & Places, our chartered architects analyze your plot orientation, solar path, wind direction, and soil bearing capacity to create homes that are naturally cooler in summer, bathed in natural winter daylight, and optimized for family living.",
+      "paragraph2": "We specialize in luxury residences across DHA Lahore (Phases 1 through 9), Bahria Town, and LDA Avenue, preparing complete submission sets for quick statutory approvals.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "100% compliant with DHA, LDA, and Cantonment Board residential building bylaws",
+        "Optimized solar orientation reducing western summer heat gain by up to 35%",
+        "Integrated structural, plumbing, electrical, and HVAC working drawings",
+        "Complete 3D spatial elevations ensuring accurate site execution without surprises"
       ],
       "image": "/uploads/01-04-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "arch-bylaws",
+        "title": "Bylaw Compliance & Statutory Approvals",
+        "subtitle": "Fast-Track Approvals Without Red Tape",
+        "description": "We handle the complete statutory documentation and liaison with development authorities on your behalf.",
         "image": "/uploads/01-04-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "DHA Lahore, Bahria Town & LDA Regulatory Vetting & Submission Portfolios",
+          "Front, Rear & Side Setback Optimization Maximizing Usable Covered Area",
+          "Height Restriction & Floor Area Ratio (FAR) Compliance Assurance",
+          "Dedicated Legal & Liaison Team for Smooth Completion Certificates"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "arch-solar",
+        "title": "Thermodynamic & Solar Path Optimization",
+        "subtitle": "Passive Sustainable Cooling",
+        "description": "Intelligent orientation reduces energy costs and keeps indoor temperatures comfortable year-round.",
+        "image": "/uploads/01-03-7.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Solar Angle Shadow Studies to Prevent Western Wall Overheating",
+          "Cross-Ventilation Wind Channels for Natural Monsoon Air Movement",
+          "Internal Double-Height Lightwells Bringing Daylight to Basement Rooms",
+          "Rooftop Rainwater Harvesting & Solar PV Infrastructure Integration"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Architectural Residential Planning project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do you prepare full structural drawings signed by certified PEC engineers?",
+        "answer": "Yes. All our structural designs are calculated and certified by registered Pakistan Engineering Council (PEC) professional engineers, including earthquake-resistant calculations per Zone 2B seismic codes."
       }
     ],
     "gallery": [
       {
-        "title": "Architectural Residential Planning - Project View 1",
+        "title": "DHA Phase 7 - 2-Kanal Contemporary Villa Plan",
         "image": "/uploads/01-04-8.jpg",
-        "category": "architectural-designs",
-        "alt": "Architectural Residential Planning"
+        "category": "Blueprints"
       },
       {
-        "title": "Architectural Residential Planning - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "architectural-designs",
-        "alt": "Architectural Residential Planning"
+        "title": "Lake City - 1-Kanal Spanish Villa Architecture",
+        "image": "/uploads/01-01-8.jpg",
+        "category": "Elevations"
+      },
+      {
+        "title": "Gulberg - 4-Kanal Modern Estate Plan",
+        "image": "/uploads/01-03-7.jpg",
+        "category": "Master Plans"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Architectural Residential Planning?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Plan Your Dream Home with Lahore’s Premier Architects",
+      "subtitle": "Book an architectural consultation to review floor plans, plot zoning, and custom concept options.",
+      "buttonText": "BOOK ARCHITECTURAL SESSION",
+      "buttonLink": "/contact",
+      "badge": "ARCHITECTURAL EXCELLENCE"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "3d-architectural-design-lahore",
-    "title": "3D Architectural Design Lahore",
+    "title": "3D Architectural Design",
     "category": "architectural-designs",
-    "metaTitle": "3D Architectural Design Lahore in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier 3D Architectural Design Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "3D Architectural Design & Rendering in Lahore | Spaces & Places",
+    "metaDescription": "Immerse yourself in photorealistic 4K 3D exterior and interior renderings, 3D floor plans, and VR walkthroughs before construction begins in Lahore.",
     "focusKeywords": "3D Architectural Design Lahore Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/3d-architectural-design-lahore",
     "ogImage": "/uploads/01-03-7.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "HYPER-REALISTIC 3D ARCHITECTURAL DESIGN LAHORE",
-      "subtitle": "Visualize every architectural curve, lighting condition, and material texture with cinematic 3D realism.",
+      "badge": "3D CGI & VISUALIZATION",
+      "title": "PHOTOREALISTIC 3D ARCHITECTURAL VISUALIZATION IN LAHORE",
+      "subtitle": "Experience your dream project before groundbreaking with photorealistic 4K CGI renders and virtual reality walkthroughs.",
       "bgImage": "/uploads/01-03-7.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "SEE YOUR HOME IN 3D",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering 3D Architectural Design Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized 3D Architectural Design Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "VIRTUAL REALITY",
+      "title": "See Every Detail With Photorealistic Precision Before Laying a Brick",
+      "subtitle": "Eliminate guesswork, costly site modifications, and visual uncertainties.",
+      "paragraph1": "Visualizing architectural drawings on paper can be challenging. Our advanced 3D CGI and architectural rendering studio transforms 2D CAD blueprints into breathtaking, photorealistic 4K imagery and 360-degree virtual reality tours.",
+      "paragraph2": "You can test different marble textures, paint palettes, exterior facade claddings, and landscape options in real-time, ensuring absolute confidence before a single rupee is spent on physical construction.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Photorealistic ray-traced rendering utilizing Unreal Engine 5 and Lumion Pro",
+        "Accurate solar simulations showing exact shadow movement during all four seasons",
+        "Interactive 1:1 scale Virtual Reality (VR) walkthroughs using Meta Quest headsets",
+        "BIM clash-detection models identifying MEP conflicts prior to on-site work"
       ],
       "image": "/uploads/01-03-7.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "3d-renders",
+        "title": "Photorealistic 4K CGI Renders",
+        "subtitle": "True-to-Life Textures, Reflections, and Light",
+        "description": "Our digital artists model accurate material textures, veined marble reflections, fabric weaves, and glass refraction.",
         "image": "/uploads/01-03-7.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Ultra-High Definition 4K Still Images for Exterior Frontages and Interiors",
+          "Daylight, Dusk, and Dramatic Nighttime Lighting Scenarios",
+          "Physical Camera Emulation with Realistic Depth-of-Field & Motion Blur",
+          "High-Resolution Large-Format Prints for Site Billboards & Presentations"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "3d-vr",
+        "title": "Immersive VR Virtual Reality Walkthroughs",
+        "subtitle": "Step Inside Your Future Residence Today",
+        "description": "Put on a VR headset in our DHA Phase 6 atelier and walk through your future bedrooms, living halls, and garden terraces.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "True 1:1 Scale Perception of Ceiling Heights and Door Widths",
+          "Real-Time Material Switching (Change Flooring and Wall Colors Live)",
+          "Ergonomic Sight-Line Evaluation from Sofas, Desks, and Beds",
+          "Shareable Web VR Links for Easy Viewing on Smartphones & Laptops"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a 3D Architectural Design Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "How many design revisions are included with 3D renderings?",
+        "answer": "Every 3D project includes 3 comprehensive revision rounds where you can adjust materials, color palettes, lighting fixtures, and minor structural elements until you are 100% satisfied."
       }
     ],
     "gallery": [
       {
-        "title": "3D Architectural Design Lahore - Project View 1",
+        "title": "4K Exterior Render - Modern Cantilever Villa",
         "image": "/uploads/01-03-7.jpg",
-        "category": "architectural-designs",
-        "alt": "3D Architectural Design Lahore"
+        "category": "Exteriors"
       },
       {
-        "title": "3D Architectural Design Lahore - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "architectural-designs",
-        "alt": "3D Architectural Design Lahore"
+        "title": "Photorealistic Interior - Double Height Foyer",
+        "image": "/uploads/01-01-8.jpg",
+        "category": "Interiors"
+      },
+      {
+        "title": "Night Aerial CGI - Estate Villa & Swimming Pool",
+        "image": "/uploads/01-04-8.jpg",
+        "category": "Aerial"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with 3D Architectural Design Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Experience Your Home in Photorealistic 3D Before Groundbreaking",
+      "subtitle": "Visit our studio for an immersive VR walkthrough demonstration.",
+      "buttonText": "REQUEST 3D VISUALIZATION QUOTE",
+      "buttonLink": "/contact",
+      "badge": "VISUALIZE THE FUTURE"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "space-planning-services-lahore",
-    "title": "Space Planning Services Lahore",
+    "title": "Space Planning",
     "category": "architectural-designs",
     "metaTitle": "Space Planning Services Lahore in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Space Planning Services Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1493,65 +1533,63 @@
     "ogImage": "/uploads/01-06-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "OPTIMIZED SPACE PLANNING SERVICES IN LAHORE",
-      "subtitle": "Eliminating wasted square footage through scientific circulation analysis, ergonomic furniture spacing, and natural light optimization.",
+      "badge": "SPACE PLANNING",
+      "title": "SPACE PLANNING IN LAHORE",
+      "subtitle": "Eliminating dead circulation, optimizing furniture flow, and maximizing every square foot.",
       "bgImage": "/uploads/01-06-6.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Space Planning Services Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Space Planning Services Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Space Planning",
+      "subtitle": "Eliminating dead circulation, optimizing furniture flow, and maximizing every square foot.",
+      "paragraph1": "At Spaces & Places, our space planning division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Space Planning",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-06-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-space-planning-services-lahore-1",
+        "title": "Key Technical Deliverables for Space Planning",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Space Planning guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-06-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-space-planning-services-lahore-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Space Planning Services Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Space Planning project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1569,15 +1607,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Space Planning Services Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Space Planning Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR SPACE PLANNING",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "architectural-animation-services-lahore",
-    "title": "Architectural Animation Services Lahore",
+    "title": "Architectural Animation",
     "category": "architectural-designs",
     "metaTitle": "Architectural Animation Services Lahore in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Architectural Animation Services Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1586,65 +1625,63 @@
     "ogImage": "/uploads/01-08-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "CINEMATIC ARCHITECTURAL ANIMATION SERVICES",
-      "subtitle": "Bring architectural concepts to vibrant life with 4K motion graphics, dynamic drone perspectives, and photorealistic ambient sounds.",
+      "badge": "ARCHITECTURAL ANIMATION",
+      "title": "ARCHITECTURAL ANIMATION IN LAHORE",
+      "subtitle": "Cinematic 4K drone walkthroughs, dynamic lighting fly-throughs, and 3D architectural films.",
       "bgImage": "/uploads/01-08-6.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Architectural Animation Services Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Architectural Animation Services Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Architectural Animation",
+      "subtitle": "Cinematic 4K drone walkthroughs, dynamic lighting fly-throughs, and 3D architectural films.",
+      "paragraph1": "At Spaces & Places, our architectural animation division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Architectural Animation",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-08-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-architectural-animation-services-lahore-1",
+        "title": "Key Technical Deliverables for Architectural Animation",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Architectural Animation guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-08-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-architectural-animation-services-lahore-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Architectural Animation Services Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Architectural Animation project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1662,9 +1699,10 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Architectural Animation Services Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Architectural Animation Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR ARCHITECTURAL ANIMATION",
       "buttonLink": "/contact"
     }
   },
@@ -1672,98 +1710,97 @@
     "slug": "landscape-design",
     "title": "Landscape Design",
     "category": "architectural-designs",
-    "metaTitle": "Landscape Design in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Landscape Design in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Landscape Design & Architecture in Lahore | Spaces & Places",
+    "metaDescription": "Transform outdoor spaces into lush sanctuaries. Landscape architecture, automated irrigation, swimming pools, and patios in Lahore.",
     "focusKeywords": "Landscape Design Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/landscape-design",
     "ogImage": "/uploads/01-09-5.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
+      "badge": "OUTDOOR ARCHITECTURE",
       "title": "LUXURY LANDSCAPE ARCHITECTURE IN LAHORE",
-      "subtitle": "Harmonizing outdoor living with indigenous flora, architectural hardscapes, ambient illumination, and private water sanctuaries.",
+      "subtitle": "Designing private botanical courtyards, heated swimming pools, outdoor BBQ pavilions, and automated irrigation systems.",
       "bgImage": "/uploads/01-09-5.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "EXPLORE LANDSCAPE DESIGNS",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Landscape Design in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Landscape Design studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "BOTANICAL SANCTUARIES",
+      "title": "Outdoor Sanctuaries That Harmonize Architecture With Nature",
+      "subtitle": "Extending your luxurious living spaces into serene, private open-air environments.",
+      "paragraph1": "A truly magnificent home does not stop at its exterior walls. At Spaces & Places, we design luxury landscapes that celebrate nature, provide cooling microclimates, and offer secluded entertainment venues for your family and guests.",
+      "paragraph2": "We curate indigenous and climate-hardy flora, water features, bespoke pergolas, outdoor firepits, and automated smart drip-irrigation systems tailored specifically for Lahore’s weather conditions.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Native and drought-tolerant plant palettes suited for Lahore’s climate",
+        "Smart automated Rain Bird drip and sprinkler irrigation with rain sensors",
+        "Custom outdoor entertainment pergolas with built-in BBQ grills and sound",
+        "Architectural low-voltage landscape lighting highlighting tree canopies and pathways"
       ],
       "image": "/uploads/01-09-5.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "land-hardscape",
+        "title": "Hardscaping, Patios & Water Features",
+        "subtitle": "Durable Elegance Under Open Skies",
+        "description": "From natural travertine stepping stones to tranquil koi ponds, we engineer hardscapes that withstand summer heat and monsoon downpours.",
         "image": "/uploads/01-09-5.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Anti-Slip Flamed Granite, Sandstone & Travertine Terrace Paving",
+          "Custom Architectural Pergolas with Motorized Louvered Waterproof Roofs",
+          "Cascading Overflow Waterfalls, Sheet Fountains & Reflection Ponds",
+          "Sunken Firepit Conversation Lounges with Weather-Resistant Upholstery"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "land-horticulture",
+        "title": "Horticulture Curation & Microclimate Design",
+        "subtitle": "Living Greenery Selected For Lahore Soils",
+        "description": "Carefully layered plant heights, aromatic blossoms, and shade-providing mature trees.",
+        "image": "/uploads/01-01-9.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Exotic Palms, Mature Ficus, and Fragrant Jasmine / Champa Groves",
+          "Fine-Leaf Bermuda & Korean Grass Lawns with Engineered Drainage Bases",
+          "Smart Micro-Drip Irrigation Conserving up to 60% Water Consumption",
+          "Concealed Brass Pathway & Tree Uplighting Creating Magical Evening Ambience"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Landscape Design project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Which lawn grass and trees survive best in Lahore’s extreme summer heat?",
+        "answer": "We recommend fine-textured Korean Velvet grass or drought-tolerant Bermuda Tifway for lawns. For trees, native Neem, Jacaranda, Gulmohar, and Royal Palm thrive exceptionally well with minimal maintenance."
       }
     ],
     "gallery": [
       {
-        "title": "Landscape Design - Project View 1",
+        "title": "DHA Phase 6 - Contemporary Courtyard Garden",
         "image": "/uploads/01-09-5.jpg",
-        "category": "architectural-designs",
-        "alt": "Landscape Design"
+        "category": "Courtyards"
       },
       {
-        "title": "Landscape Design - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "architectural-designs",
-        "alt": "Landscape Design"
+        "title": "Gulberg - Heated Infinity Swimming Pool & Patio",
+        "image": "/uploads/01-01-9.jpg",
+        "category": "Pools"
+      },
+      {
+        "title": "Estate Villa - Pergola Lounge & Waterfall",
+        "image": "/uploads/01-02-10.jpg",
+        "category": "Water Features"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Landscape Design?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Ready to Create Your Private Outdoor Paradise?",
+      "subtitle": "Schedule a site visit with our landscape architects to design an oasis of green and water.",
+      "buttonText": "SCHEDULE LANDSCAPE CONSULTATION",
+      "buttonLink": "/contact",
+      "badge": "TRANSFORM YOUR OUTDOORS"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "facade-elevation-design",
-    "title": "Facade / Elevation Design",
+    "title": "Facade & Elevation Design",
     "category": "architectural-designs",
     "metaTitle": "Facade / Elevation Design in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Facade / Elevation Design in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1772,65 +1809,63 @@
     "ogImage": "/uploads/01-10-4.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "STUNNING FACADE & ELEVATION DESIGN IN LAHORE",
-      "subtitle": "Making unforgettable architectural statements with geometrically bold, material-rich exterior front elevations.",
+      "badge": "FACADE & ELEVATION DESIGN",
+      "title": "FACADE & ELEVATION DESIGN IN LAHORE",
+      "subtitle": "Modern brutalist, Spanish colonial, and classical neoclassical elevation designs in Lahore.",
       "bgImage": "/uploads/01-10-4.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Facade / Elevation Design in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Facade / Elevation Design studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Facade & Elevation Design",
+      "subtitle": "Modern brutalist, Spanish colonial, and classical neoclassical elevation designs in Lahore.",
+      "paragraph1": "At Spaces & Places, our facade & elevation design division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Facade & Elevation Design",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-10-4.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-facade-elevation-design-1",
+        "title": "Key Technical Deliverables for Facade & Elevation Design",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Facade & Elevation Design guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-10-4.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-facade-elevation-design-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Facade / Elevation Design project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Facade & Elevation Design project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1848,15 +1883,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Facade / Elevation Design?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Facade & Elevation Design Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR FACADE & ELEVATION DESIGN",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "midrise-highrise-planning",
-    "title": "Midrise / Highrise Planning",
+    "title": "Highrise Tower Planning",
     "category": "architectural-designs",
     "metaTitle": "Midrise / Highrise Planning in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Midrise / Highrise Planning in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1865,65 +1901,63 @@
     "ogImage": "/uploads/01-04-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "MIDRISE & HIGHRISE ARCHITECTURAL PLANNING",
-      "subtitle": "Engineering high-density commercial towers and residential complexes with structural mastery, wind load analysis, and seismic safety.",
+      "badge": "HIGHRISE TOWER PLANNING",
+      "title": "HIGHRISE TOWER PLANNING IN LAHORE",
+      "subtitle": "Mixed-use commercial tower architecture, core elevator design, and seismic shear wall engineering.",
       "bgImage": "/uploads/01-04-8.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Midrise / Highrise Planning in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Midrise / Highrise Planning studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Highrise Tower Planning",
+      "subtitle": "Mixed-use commercial tower architecture, core elevator design, and seismic shear wall engineering.",
+      "paragraph1": "At Spaces & Places, our highrise tower planning division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Highrise Tower Planning",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-04-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-midrise-highrise-planning-1",
+        "title": "Key Technical Deliverables for Highrise Tower Planning",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Highrise Tower Planning guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-04-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-midrise-highrise-planning-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Midrise / Highrise Planning project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Highrise Tower Planning project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -1941,15 +1975,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Midrise / Highrise Planning?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Highrise Tower Planning Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR HIGHRISE TOWER PLANNING",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "refurbishment-services-in-lahore",
-    "title": "Refurbishment Services in Lahore",
+    "title": "Refurbishment & Renovation",
     "category": "construction-services",
     "metaTitle": "Refurbishment Services in Lahore in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Refurbishment Services in Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -1958,65 +1993,63 @@
     "ogImage": "/uploads/01-01-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "HOME & COMMERCIAL REFURBISHMENT IN LAHORE",
-      "subtitle": "Breathing vibrant new life into aging structures through structural reinforcement, spatial reconfiguration, and modern luxury finishes.",
+      "badge": "REFURBISHMENT & RENOVATION",
+      "title": "REFURBISHMENT & RENOVATION IN LAHORE",
+      "subtitle": "Complete structural modernization, wall removals, MEP replacement, and luxury finishes.",
       "bgImage": "/uploads/01-01-8.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Refurbishment Services in Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Refurbishment Services in Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Refurbishment & Renovation",
+      "subtitle": "Complete structural modernization, wall removals, MEP replacement, and luxury finishes.",
+      "paragraph1": "At Spaces & Places, our refurbishment & renovation division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Refurbishment & Renovation",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-01-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-refurbishment-services-in-lahore-1",
+        "title": "Key Technical Deliverables for Refurbishment & Renovation",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Refurbishment & Renovation guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-refurbishment-services-in-lahore-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Refurbishment Services in Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Refurbishment & Renovation project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -2034,15 +2067,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Refurbishment Services in Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Refurbishment & Renovation Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR REFURBISHMENT & RENOVATION",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "project-management-in-lahore",
-    "title": "Project Management in Lahore",
+    "title": "Project Management",
     "category": "construction-services",
     "metaTitle": "Project Management in Lahore in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Project Management in Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -2051,65 +2085,63 @@
     "ogImage": "/uploads/01-02-9.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "EXPERT CONSTRUCTION PROJECT MANAGEMENT IN LAHORE",
-      "subtitle": "Eliminating cost overruns and delays with rigorous on-site supervision, milestone tracking, and quality assurance protocols.",
+      "badge": "PROJECT MANAGEMENT",
+      "title": "PROJECT MANAGEMENT IN LAHORE",
+      "subtitle": "Primavera CPM scheduling, strict BOQ auditing, site QA/QC inspection, and contractor auditing.",
       "bgImage": "/uploads/01-02-9.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Project Management in Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Project Management in Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Project Management",
+      "subtitle": "Primavera CPM scheduling, strict BOQ auditing, site QA/QC inspection, and contractor auditing.",
+      "paragraph1": "At Spaces & Places, our project management division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Project Management",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-02-9.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-project-management-in-lahore-1",
+        "title": "Key Technical Deliverables for Project Management",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Project Management guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-02-9.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-project-management-in-lahore-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Project Management in Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Project Management project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -2127,15 +2159,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Project Management in Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Project Management Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR PROJECT MANAGEMENT",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "contract-administration-services-lahore",
-    "title": "Contract Administration Services Lahore",
+    "title": "Contract Administration",
     "category": "construction-services",
     "metaTitle": "Contract Administration Services Lahore in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Contract Administration Services Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -2144,65 +2177,63 @@
     "ogImage": "/uploads/01-03-7.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "CONTRACT ADMINISTRATION SERVICES IN LAHORE",
-      "subtitle": "Protecting your financial investment with transparent contractor agreements, BOQ verification, and interim payment certifications.",
+      "badge": "CONTRACT ADMINISTRATION",
+      "title": "CONTRACT ADMINISTRATION IN LAHORE",
+      "subtitle": "FIDIC contracts, payment verification, variation order vetting, and dispute mitigation.",
       "bgImage": "/uploads/01-03-7.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Contract Administration Services Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Contract Administration Services Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Contract Administration",
+      "subtitle": "FIDIC contracts, payment verification, variation order vetting, and dispute mitigation.",
+      "paragraph1": "At Spaces & Places, our contract administration division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Contract Administration",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-03-7.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-contract-administration-services-lahore-1",
+        "title": "Key Technical Deliverables for Contract Administration",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Contract Administration guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-03-7.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-contract-administration-services-lahore-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Contract Administration Services Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Contract Administration project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -2220,201 +2251,204 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Contract Administration Services Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Contract Administration Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR CONTRACT ADMINISTRATION",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "full-scale-construction-company-in-lahore",
-    "title": "Full Scale Construction Company in Lahore",
+    "title": "Construction Services",
     "category": "construction-services",
-    "metaTitle": "Full Scale Construction Company in Lahore in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Full Scale Construction Company in Lahore in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Full Scale Construction Company in Lahore | Spaces & Places",
+    "metaDescription": "Trusted A+ grade construction company in Lahore. Specializing in gray structure, luxury turnkey residential construction, and commercial towers in DHA.",
     "focusKeywords": "Full Scale Construction Company in Lahore Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/full-scale-construction-company-in-lahore",
     "ogImage": "/uploads/01-04-8.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "FULL SCALE TURNKEY CONSTRUCTION IN LAHORE",
-      "subtitle": "Constructing enduring residential and commercial monuments from excavation to final coat of paint with ironclad guarantees.",
+      "badge": "TURNKEY CONSTRUCTION",
+      "title": "FULL-SCALE TURNKEY CONSTRUCTION IN LAHORE",
+      "subtitle": "Building high-end residential estates and commercial buildings with Grade-60 seismic steel, A+ brickwork, and turnkey warranties.",
       "bgImage": "/uploads/01-04-8.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "GET CONSTRUCTION COST ESTIMATE",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Full Scale Construction Company in Lahore in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Full Scale Construction Company in Lahore studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "ENGINEERING EXCELLENCE",
+      "title": "Uncompromising Structural Integrity & Turnkey Craftsmanship",
+      "subtitle": "Constructing generational assets with certified materials and daily engineering supervision.",
+      "paragraph1": "Construction in Lahore requires rigorous material testing, seasoned project managers, and zero tolerance for structural shortcuts. Spaces & Places delivers premium turnkey residential and commercial construction across DHA, Bahria Town, and Gulberg.",
+      "paragraph2": "We utilize exclusively Grade-60 deformed steel rebar, high-strength ready-mix concrete, and certified waterproofing membranes, guaranteeing homes that remain free of dampness, settling cracks, and structural wear for generations.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Exclusive use of certified Grade-60 rebar (Mughal / Amreli) with lab test certificates",
+        "3,000+ PSI cylinder-tested ready-mix concrete for all foundations and roof slabs",
+        "Double-layer chemical DPC damp-proofing and subterranean termite barrier warranties",
+        "Daily photographic progress logs accessible via client mobile portal"
       ],
       "image": "/uploads/01-04-8.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "const-gray",
+        "title": "Grade-60 Earthquake Resistant Gray Structure",
+        "subtitle": "The Unshakable Skeleton of Your Home",
+        "description": "Engineered according to modern seismic Zone-2B building codes with deep column footings and reinforced lintel beams.",
         "image": "/uploads/01-04-8.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Deep Soil Compaction & Raft Foundation Concrete Pours",
+          "First-Class A-Grade Kiln-Fired Clay Bricks with High Crushing Strength",
+          "Heavy-Gauge PVC Electrical Conduits & High-Pressure PPRC Plumbing Pipes",
+          "Bitumen Under-Slab Membrane Preventing Capillary Ground Moisture Rise"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "const-finishing",
+        "title": "Luxury Turnkey Finishing Execution",
+        "subtitle": "Perfection in Every Join and Corner",
+        "description": "From precision floor screeding to flawless wall putty and European sanitaryware installation.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Laser-Leveled Floor Screeds Ensuring 100% Flat Tile and Marble Laying",
+          "Multi-Coat German Knauf Surface Putty and Scrub-Resistant Emulsions",
+          "Thermal-Break Double-Glazed Powder-Coated Aluminum Windows",
+          "1-Year Comprehensive Workmanship & MEP Performance Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Full Scale Construction Company in Lahore project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is your current per-square-foot rate for A+ grade construction in Lahore?",
+        "answer": "Depending on material specifications, gray structure ranges from Rs. 2,800 to Rs. 3,500/sq.ft., while complete luxury turnkey finishing ranges from Rs. 6,500 to Rs. 9,500+/sq.ft. We provide a transparent itemized BOQ with fixed price guarantees."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do you provide on-site civil engineers daily?",
+        "answer": "Yes. Every Spaces & Places construction site has a dedicated full-time qualified civil engineer on-site during all working hours, reporting directly to our senior structural project director."
       }
     ],
     "gallery": [
       {
-        "title": "Full Scale Construction Company in Lahore - Project View 1",
+        "title": "DHA Phase 6 - 1-Kanal Villa Construction",
         "image": "/uploads/01-04-8.jpg",
-        "category": "construction-services",
-        "alt": "Full Scale Construction Company in Lahore"
+        "category": "Gray Structure"
       },
       {
-        "title": "Full Scale Construction Company in Lahore - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "construction-services",
-        "alt": "Full Scale Construction Company in Lahore"
+        "title": "Lake City - Turnkey Villa Final Handover",
+        "image": "/uploads/01-01-8.jpg",
+        "category": "Finishing"
+      },
+      {
+        "title": "Gulberg - Commercial Structure Concrete Pour",
+        "image": "/uploads/01-03-7.jpg",
+        "category": "Commercial"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Full Scale Construction Company in Lahore?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Build Your Masterpiece on Time and Within Budget",
+      "subtitle": "Contact our construction division for a detailed BOQ estimate and site inspection.",
+      "buttonText": "REQUEST DETAILED BOQ ESTIMATE",
+      "buttonLink": "/contact",
+      "badge": "BUILD WITH CONFIDENCE"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "residential-furniture",
     "title": "Residential Furniture",
     "category": "furniture",
-    "metaTitle": "Residential Furniture in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Residential Furniture in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Bespoke Residential Furniture in Lahore | Spaces & Places Atelier",
+    "metaDescription": "Handcrafted solid wood furniture, luxury velvet sofas, dining suites, and king beds. Manufactured at Spaces & Places furniture atelier in Lahore.",
     "focusKeywords": "Residential Furniture Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/residential-furniture",
     "ogImage": "/uploads/01-05-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "HANDCRAFTED RESIDENTIAL FURNITURE IN LAHORE",
-      "subtitle": "Bespoke artisan furniture designed to harmonize perfectly with your home's architectural interior layout.",
+      "badge": "LIVING SPACES",
+      "title": "BESPOKE RESIDENTIAL FURNITURE IN LAHORE",
+      "subtitle": "Tailor-made sofas, dining tables, king beds, and console units crafted from solid seasoned hardwoods.",
       "bgImage": "/uploads/01-05-6.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "EXPLORE FURNITURE COLLECTION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Residential Furniture in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Residential Furniture studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "ARTISANAL JOINERY",
+      "title": "Heirloom Furniture Sculpted For Generational Comfort",
+      "subtitle": "Solid seasoned hardwoods, high-density foam, and imported luxury textiles.",
+      "paragraph1": "Mass-produced furniture rarely fits the majestic proportions of luxury villas in Lahore. Spaces & Places operates a dedicated furniture workshop where master joiners handcraft custom statement pieces to your exact specifications.",
+      "paragraph2": "We utilize kiln-dried Burmese teak, seasoned American walnut, and European white oak, paired with stain-guarded Turkish velvets, top-grain Italian leathers, and PVD brass hardware.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "100% kiln-dried hardwood internal frames backed by a 10-year structural warranty",
+        "High-resilience multi-density foam and down-feather filling for supreme comfort",
+        "Bespoke customization of dimensions, wood finishes, and upholstery textiles",
+        "White-glove home delivery and installation anywhere in Lahore and Islamabad"
       ],
       "image": "/uploads/01-05-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "furn-living",
+        "title": "Luxury Living Room Seating & Accent Tables",
+        "subtitle": "Sculptural Lounging and Conversations",
+        "description": "Sofas and armchairs engineered for deep ergonomic relaxation and visual sophistication.",
         "image": "/uploads/01-05-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Curved Modular Sectionals in Performance Bouclé and Brushed Velvet",
+          "Sculptural Coffee Tables with Inset Nero Marquina & Calacatta Marble Tops",
+          "Floating Credenzas with Slatted Wood Acoustic Doors and Brass Accents",
+          "Ergonomic Swivel Armchairs with High-Tensile Stainless Steel Bases"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "furn-dining",
+        "title": "Grand Dining Suites & Master Beds",
+        "subtitle": "The Centerpiece of Feasting and Rest",
+        "description": "Imposing 10-to-14-seater dining tables and majestic upholstered beds that anchor your master rooms.",
+        "image": "/uploads/01-01-14.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Solid American Walnut Live-Edge Dining Tables with Matte Polyurethane Finish",
+          "Dining Chairs with Ergonomic Lumbar Contours and Stain-Proof Fabric",
+          "Upholstered King Beds with Wrap-Around Wingback Headboards",
+          "Matching Floating Bedside Nightstands with Integrated Wireless Chargers"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Residential Furniture project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "What wood do you use to prevent warping in Lahore’s monsoon and winter climate changes?",
+        "answer": "We exclusively use kiln-dried hardwoods with moisture content strictly under 10% (Burmese Teak, American Walnut, White Ash). This eliminates splitting, warping, or joint loosening throughout seasonal humidity shifts."
       }
     ],
     "gallery": [
       {
-        "title": "Residential Furniture - Project View 1",
+        "title": "Living Room - Modular Curved Velvet Sofa",
         "image": "/uploads/01-05-6.jpg",
-        "category": "furniture",
-        "alt": "Residential Furniture"
+        "category": "Sofas"
       },
       {
-        "title": "Residential Furniture - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "furniture",
-        "alt": "Residential Furniture"
+        "title": "Dining Room - 12-Seater Solid Walnut Dining Suite",
+        "image": "/uploads/01-01-14.jpg",
+        "category": "Dining"
+      },
+      {
+        "title": "Master Bedroom - Custom Upholstered Bed & Console",
+        "image": "/uploads/01-01-8.jpg",
+        "category": "Beds"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Residential Furniture?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Craft Unique Pieces Tailored to Your Home",
+      "subtitle": "Visit our furniture showroom in DHA Phase 6 to touch and feel our wood and textile samples.",
+      "buttonText": "VISIT FURNITURE ATELIER",
+      "buttonLink": "/contact",
+      "badge": "COMMISSION YOUR FURNITURE"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   },
   {
     "slug": "customized-furniture",
-    "title": "Customized Furniture",
+    "title": "Customized Joinery",
     "category": "furniture",
     "metaTitle": "Customized Furniture in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Customized Furniture in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -2423,65 +2457,63 @@
     "ogImage": "/uploads/01-06-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "BESPOKE CUSTOMIZED FURNITURE IN LAHORE",
-      "subtitle": "Every home has unique dimensions. We build one-of-a-kind furniture pieces tailored precisely to your spatial specifications.",
+      "badge": "CUSTOMIZED JOINERY",
+      "title": "CUSTOMIZED JOINERY IN LAHORE",
+      "subtitle": "Bespoke walk-in closets, glass wardrobes with integrated LED illumination, and fluted paneling.",
       "bgImage": "/uploads/01-06-6.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Customized Furniture in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Customized Furniture studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Customized Joinery",
+      "subtitle": "Bespoke walk-in closets, glass wardrobes with integrated LED illumination, and fluted paneling.",
+      "paragraph1": "At Spaces & Places, our customized joinery division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Customized Joinery",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-06-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-customized-furniture-1",
+        "title": "Key Technical Deliverables for Customized Joinery",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Customized Joinery guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-06-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-customized-furniture-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Customized Furniture project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Customized Joinery project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -2499,15 +2531,16 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Customized Furniture?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Customized Joinery Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR CUSTOMIZED JOINERY",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "commercial-furniture",
-    "title": "Commercial Furniture",
+    "title": "Commercial Office Furniture",
     "category": "furniture",
     "metaTitle": "Commercial Furniture in Lahore | Spaces & Places Architecture & Interiors",
     "metaDescription": "Premier Commercial Furniture in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
@@ -2516,65 +2549,63 @@
     "ogImage": "/uploads/01-02-10.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "DURABLE COMMERCIAL FURNITURE IN LAHORE",
-      "subtitle": "High-durability, ergonomically certified commercial furniture built to withstand rigorous corporate and retail usage.",
+      "badge": "COMMERCIAL OFFICE FURNITURE",
+      "title": "COMMERCIAL OFFICE FURNITURE IN LAHORE",
+      "subtitle": "BIFMA-certified ergonomic task chairs, modular conference tables, and acoustic dividers.",
       "bgImage": "/uploads/01-02-10.jpg",
       "ctaText": "REQUEST CONSULTATION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Commercial Furniture in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Commercial Furniture studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "SPECIALIZED DISCIPLINE",
+      "title": "Engineering Excellence in Commercial Office Furniture",
+      "subtitle": "BIFMA-certified ergonomic task chairs, modular conference tables, and acoustic dividers.",
+      "paragraph1": "At Spaces & Places, our commercial office furniture division brings deep technical mastery and aesthetic discernment to every assignment in Lahore and across Pakistan.",
+      "paragraph2": "We combine certified engineering workflows with artisanal attention to detail, ensuring your project exceeds every functional and aesthetic expectation.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Specialized methodology tailored specifically for Commercial Office Furniture",
+        "Strict adherence to international safety and quality standards",
+        "End-to-end project coordination and milestone reporting",
+        "Dedicated senior engineering and design oversight"
       ],
       "image": "/uploads/01-02-10.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "sec-commercial-furniture-1",
+        "title": "Key Technical Deliverables for Commercial Office Furniture",
+        "subtitle": "Precision Planning and Execution",
+        "description": "Our structured methodology for Commercial Office Furniture guarantees complete precision, transparency, and timely delivery.",
         "image": "/uploads/01-02-10.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
+          "Comprehensive Diagnostic Site Survey & Feasibility Analysis",
+          "Full Working CAD Drawings & Specification Portfolios",
           "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Turnkey On-Site Quality Assurance & Handover Reports"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
+        "id": "sec-commercial-furniture-2",
+        "title": "Premium Materials & Engineering Specs",
+        "subtitle": "Durability and Performance",
+        "description": "We specify and install only tested materials built to deliver lasting distinction and low maintenance.",
         "image": "/uploads/01-01-8.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Certified Structural Materials with Laboratory Test Reports",
+          "Anti-Corrosive European Hardware & Fittings",
+          "Energy-Efficient Systems Lowering Operational Costs",
+          "Comprehensive Workmanship & Component Warranty"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Commercial Furniture project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
+        "question": "What is the typical timeframe for a Commercial Office Furniture project?",
+        "answer": "Depending on scale, the design and planning phase takes 2 to 4 weeks, followed by tailored execution phases aligned with your master schedule."
       },
       {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Can you provide a preliminary site inspection and cost estimate?",
+        "answer": "Yes. Our senior team provides complimentary initial consultations in DHA, Gulberg, and Bahria Town Lahore."
       }
     ],
     "gallery": [
@@ -2592,103 +2623,103 @@
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Commercial Furniture?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
+      "badge": "GET STARTED",
+      "title": "Ready to Discuss Your Commercial Office Furniture Project?",
+      "subtitle": "Connect with our specialized team for a comprehensive consultation and feasibility review.",
+      "buttonText": "CONSULT FOR COMMERCIAL OFFICE FURNITURE",
       "buttonLink": "/contact"
     }
   },
   {
     "slug": "decor",
-    "title": "Decor",
+    "title": "Luxury Decor",
     "category": "furniture",
-    "metaTitle": "Decor in Lahore | Spaces & Places Architecture & Interiors",
-    "metaDescription": "Premier Decor in Lahore by Spaces & Places. Exceptional craftsmanship, modern architectural precision, and turnkey delivery.",
+    "metaTitle": "Luxury Decor & Art Accessories in Lahore | Spaces & Places",
+    "metaDescription": "Complete your home with curated sculptures, designer table lamps, imported Persian rugs, and bespoke artwork from Spaces & Places Lahore.",
     "focusKeywords": "Decor Lahore, Spaces and Places, Architecture Lahore, Luxury Interiors Pakistan",
     "canonicalUrl": "https://spacesandplaces.com.pk/decor",
     "ogImage": "/uploads/01-08-6.jpg",
     "indexRobots": true,
     "hero": {
-      "badge": "SPACES & PLACES EXPERTISE",
-      "title": "CURATED LUXURY HOME DECOR IN LAHORE",
-      "subtitle": "Infusing personality and refined taste into your rooms with statement mirrors, artisan sculptures, and ambient lighting.",
+      "badge": "OBJECTS D’ART",
+      "title": "LUXURY DECOR & ACCESSORIES IN LAHORE",
+      "subtitle": "Finishing touches that elevate an interior from beautiful to breathtaking—original artwork, brass sculptures, and imported lighting.",
       "bgImage": "/uploads/01-08-6.jpg",
-      "ctaText": "REQUEST CONSULTATION",
+      "ctaText": "VIEW DECOR COLLECTION",
       "ctaLink": "/contact"
     },
     "overview": {
-      "badge": "CRAFTSMANSHIP & INNOVATION",
-      "title": "Mastering Decor in Lahore",
-      "subtitle": "Precision engineering, certified materials, and distinctive luxury design.",
-      "paragraph1": "At Spaces & Places, our specialized Decor studio combines innovative design techniques with meticulous attention to detail. Every project is tailored to the client's exact spatial dimensions and lifestyle requirements.",
-      "paragraph2": "We utilize state-of-the-art materials, environmental sustainability principles, and master artisan execution to ensure your space stands the test of time.",
+      "badge": "CURATED FINISHING",
+      "title": "The Final Layer of Soul, Atmosphere, and Distinction",
+      "subtitle": "Transforming well-designed rooms into rich, tactile, and expressive homes.",
+      "paragraph1": "True luxury lies in the curated details. A carefully positioned alabaster table lamp, a bespoke bronze sculpture, a hand-knotted silk rug, or an original commissioned oil painting brings life, warmth, and individuality to an architectural space.",
+      "paragraph2": "Our interior stylists curate exclusive decorative artifacts, museum-quality ceramics, and designer accessories from around the world to deliver a magazine-worthy turnkey home.",
       "highlights": [
-        "Dedicated Senior Architectural & Design Oversight",
-        "Custom 2D/3D Concept Proposals Prior to Execution",
-        "Transparent BOQs with Zero Unforeseen Cost Surprises",
-        "Strict Adherence to International Quality & Safety Standards"
+        "Curated original art pieces and custom commissioned paintings",
+        "Artisanal hand-blown glass, ceramic vases, and cast bronze tabletop objects",
+        "Imported hand-knotted wool and bamboo-silk area rugs from Iran and Pakistan",
+        "Sculptural accent lighting including alabaster, travertine, and smoked glass lamps"
       ],
       "image": "/uploads/01-08-6.jpg"
     },
     "sections": [
       {
-        "id": "service-deliverables",
-        "title": "Key Capabilities & Deliverables",
-        "subtitle": "Uncompromising Quality and Care",
-        "description": "Our comprehensive workflow guarantees that each phase of your project is delivered with perfection.",
-        "icon": "Layers",
+        "id": "decor-art",
+        "title": "Original Art Curation & Sculptural Objects",
+        "subtitle": "Expressive Statements for Consoles and Walls",
+        "description": "We connect clients with celebrated Pakistani artists and global sculpture ateliers to select pieces that complement room proportions.",
         "image": "/uploads/01-08-6.jpg",
         "points": [
-          "Initial Site Inspection & Spatial Diagnostic",
-          "Detailed CAD Working Blueprints & 3D Visual Renderings",
-          "Material Sourcing from Certified Tier-1 Manufacturers",
-          "Turnkey On-Site Execution and Final Handover"
+          "Large-Format Textured Canvas Artworks Tailored to Double-Height Walls",
+          "Heavy Cast Bronze & Black Marquina Marble Tabletop Sculptures",
+          "Organic Hand-Thrown Ceramic Vessels and Minimalist Centerpieces",
+          "Large-Scale Beveled Mirrors with Hand-Carved Gilded Accents"
         ]
       },
       {
-        "id": "service-materials",
-        "title": "Premium Materials & Finishes",
-        "subtitle": "Built for Longevity and Distinction",
-        "description": "We source only certified hardwoods, anti-corrosion metals, high-grade stones, and European fittings.",
-        "icon": "Sparkles",
-        "image": "/uploads/01-01-8.jpg",
+        "id": "decor-lighting",
+        "title": "Atmospheric Table & Floor Lighting",
+        "subtitle": "Intimate Pools of Warm Illumination",
+        "description": "Sculptural lighting pieces that serve as luminous art objects by day and cozy ambient lights by night.",
+        "image": "/uploads/01-01-14.jpg",
         "points": [
-          "Kiln-Dried Hardwoods & Luxury Veneers",
-          "PVD Titanium Gold & Matte Black Hardware",
-          "Eco-Friendly Low VOC Finishing Stains",
-          "Pressure Tested Plumbing & High-Amp Wiring"
+          "Translucent Spanish Alabaster Lamps with Warm Dimmable LED Cores",
+          "Brushed Antique Brass Floor Lamps with Adjustable Counterweights",
+          "Hand-Knotted Vegetable-Dyed Wool and Bamboo-Silk Area Rugs",
+          "Designer Coffee Table Hardcover Volumes & Crystal Barware Accents"
         ]
       }
     ],
     "faqs": [
       {
-        "question": "How do I start a Decor project with Spaces & Places?",
-        "answer": "You can reach out via our contact form or call +92 300 1999967. We will arrange a discovery meeting to review your plot, floor plan, or room requirements and prepare a custom proposal."
-      },
-      {
-        "question": "Do you provide on-site supervision during execution?",
-        "answer": "Yes! All our projects include dedicated project managers and site engineers who oversee daily progress, quality control, and contractor coordination."
+        "question": "Do your interior designers offer styling packages for existing homes?",
+        "answer": "Yes. We offer complete turnkey interior styling services where our creative directors select rugs, lamps, art, cushions, and tabletop decor to refresh and elevate your current home without major construction."
       }
     ],
     "gallery": [
       {
-        "title": "Decor - Project View 1",
+        "title": "Drawing Room - Alabaster Lamp & Bronze Sculpture",
         "image": "/uploads/01-08-6.jpg",
-        "category": "furniture",
-        "alt": "Decor"
+        "category": "Sculptures"
       },
       {
-        "title": "Decor - Architectural Detail",
-        "image": "/uploads/01-02-9.jpg",
-        "category": "furniture",
-        "alt": "Decor"
+        "title": "Foyer - Large-Format Textured Artwork",
+        "image": "/uploads/01-01-14.jpg",
+        "category": "Artwork"
+      },
+      {
+        "title": "Lounge - Hand-Knotted Silk Rug & Velvet Throws",
+        "image": "/uploads/01-05-6.jpg",
+        "category": "Textiles"
       }
     ],
     "cta": {
-      "title": "Ready to Transform Your Space with Decor?",
-      "subtitle": "Schedule a discovery session with our expert architects and designers today.",
-      "buttonText": "BOOK A CONSULTATION",
-      "buttonLink": "/contact"
-    }
+      "title": "Elevate Your Interior with Curated Art & Luxury Decor",
+      "subtitle": "Book a home styling consultation with our creative accessories director.",
+      "buttonText": "SCHEDULE STYLING APPOINTMENT",
+      "buttonLink": "/contact",
+      "badge": "COMPLETE YOUR HOME"
+    },
+    "updatedAt": "2026-09-10T12:49:07.457Z"
   }
 ]

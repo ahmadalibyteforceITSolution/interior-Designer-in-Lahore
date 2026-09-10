@@ -50,7 +50,7 @@
           class="w-full bg-black border border-brand-border text-white px-3 py-1.5 text-xs outline-none"
         />
 
-        <div class="max-h-[520px] overflow-y-auto space-y-1 pr-1">
+        <div class="max-h-56 lg:max-h-[520px] overflow-y-auto space-y-1 pr-1">
           <button
             v-for="p in filteredSeoList"
             :key="p.slug"

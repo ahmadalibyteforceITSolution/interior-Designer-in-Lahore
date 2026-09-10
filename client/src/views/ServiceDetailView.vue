@@ -36,9 +36,9 @@
       <SectionCardsGrid
         v-if="pageData.sections?.length"
         :sections="pageData.sections"
-        section-badge="SERVICE EXCELLENCE"
-        :section-title="`${pageData.title.toUpperCase()} SPECIFICATIONS`"
-        section-subtitle="Tailored methodologies and material engineering customized for your project."
+        :section-badge="pageData.sectionBadge || 'SERVICE CAPABILITIES'"
+        :section-title="pageData.sectionTitle || `${pageData.title.toUpperCase()} ARCHITECTURE`"
+        :section-subtitle="pageData.sectionSubtitle || 'Specialized deliverables, engineering methodologies, and noble material specifications.'"
       />
 
       <!-- In-Article / Mid-page AdSense Slot -->

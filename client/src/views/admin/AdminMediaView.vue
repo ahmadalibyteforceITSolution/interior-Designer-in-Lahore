@@ -13,7 +13,7 @@
       </div>
 
       <!-- Upload Button -->
-      <label class="px-5 py-2.5 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow cursor-pointer inline-flex items-center gap-2">
+      <label class="px-4 sm:px-5 py-2 sm:py-2.5 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow cursor-pointer inline-flex items-center justify-center gap-2 w-full sm:w-auto">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
         </svg>
@@ -23,14 +23,14 @@
     </div>
 
     <!-- Search & Filters -->
-    <div class="flex items-center gap-4">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-4">
       <input
         v-model="search"
         type="text"
         placeholder="Search filename (e.g. logo, bahria, villa)..."
-        class="bg-brand-surface border border-brand-border focus:border-brand-gold text-white px-4 py-2 text-xs outline-none w-full max-w-md"
+        class="bg-brand-surface border border-brand-border focus:border-brand-gold text-white px-3 sm:px-4 py-2 text-xs outline-none w-full sm:max-w-md"
       />
-      <span class="text-xs text-gray-400 font-mono">
+      <span class="text-xs text-gray-400 font-mono text-right sm:text-left">
         Showing {{ filteredMedia.length }} of {{ mediaFiles.length }} assets
       </span>
     </div>
