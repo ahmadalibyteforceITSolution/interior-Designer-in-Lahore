@@ -1,6 +1,10 @@
 require('dotenv').config();
-const dns = require('dns');
-dns.setServers(['8.8.8.8', '8.8.4.4']); // Ensure proper DNS SRV resolution for MongoDB Atlas
+if (!process.env.VERCEL) {
+  try {
+    const dns = require('dns');
+    dns.setServers(['8.8.8.8', '8.8.4.4']); // Local DNS SRV resolution
+  } catch (e) {}
+}
 
 const express = require('express');
 const cors = require('cors');
@@ -151,14 +155,29 @@ async function startServer() {
   }
 }
 
-if (require.main === module) {
-  startServer();
-} else {
-  if (MONGODB_URI && mongoose.connection.readyState === 0) {
-    mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 8000 }).catch(err => {
-      console.error('Serverless Mongo connect error:', err.message);
+let isConnecting = null;
+
+async function connectToDatabase() {
+  if (mongoose.connection.readyState === 1) {
+    return mongoose.connection;
+  }
+  if (isConnecting) {
+    return isConnecting;
+  }
+  if (MONGODB_URI) {
+    isConnecting = mongoose.connect(MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000,
+      maxPoolSize: 10,
+    }).finally(() => {
+      isConnecting = null;
     });
+    return isConnecting;
   }
 }
 
+if (require.main === module) {
+  startServer();
+}
+
 module.exports = app;
+module.exports.connectToDatabase = connectToDatabase;

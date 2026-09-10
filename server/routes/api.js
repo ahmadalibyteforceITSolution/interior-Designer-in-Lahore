@@ -43,7 +43,24 @@ const upload = multer({
     }
     cb(new Error('Only image files and MP4 videos are allowed'));
   }
-});
+// In-Memory Server Cache for Ultra-Fast Sub-10ms API Responses
+const serverCache = new Map();
+
+function getCached(key, ttl = 180000) {
+  const item = serverCache.get(key);
+  if (item && (Date.now() - item.time < ttl)) {
+    return item.data;
+  }
+  return null;
+}
+
+function setCached(key, data) {
+  serverCache.set(key, { data, time: Date.now() });
+}
+
+function clearServerCache() {
+  serverCache.clear();
+}
 
 // ==========================================
 // 1. AUTHENTICATION ROUTES
@@ -124,6 +141,9 @@ router.post('/auth/change-password', auth, async (req, res) => {
 router.get('/settings', async (req, res) => {
   try {
     res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    const cached = getCached('settings');
+    if (cached) return res.json(cached);
+
     let settings = null;
     try {
       settings = await SiteSettings.findOne();
@@ -137,7 +157,9 @@ router.get('/settings', async (req, res) => {
         settings = JSON.parse(fs.readFileSync(defaultSettingsPath, 'utf8'));
       }
     }
-    res.json(settings || {});
+    const finalData = settings || {};
+    setCached('settings', finalData);
+    res.json(finalData);
   } catch (err) {
     res.status(500).json({ message: 'Error fetching settings', error: err.message });
   }
@@ -145,6 +167,7 @@ router.get('/settings', async (req, res) => {
 
 router.put('/settings', auth, async (req, res) => {
   try {
+    clearServerCache();
     let settings = await SiteSettings.findOne();
     if (!settings) {
       settings = new SiteSettings(req.body);
@@ -165,6 +188,9 @@ router.put('/settings', auth, async (req, res) => {
 router.get('/pages', async (req, res) => {
   try {
     res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    const cached = getCached('pages_list');
+    if (cached) return res.json(cached);
+
     let pages = [];
     try {
       pages = await Page.find({}, 'slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
@@ -185,6 +211,7 @@ router.get('/pages', async (req, res) => {
         }));
       }
     }
+    setCached('pages_list', pages);
     res.json(pages);
   } catch (err) {
     res.status(500).json({ message: 'Error fetching pages', error: err.message });
@@ -194,6 +221,10 @@ router.get('/pages', async (req, res) => {
 router.get('/pages/:slug', async (req, res) => {
   try {
     res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    const cacheKey = `page_${req.params.slug}`;
+    const cached = getCached(cacheKey);
+    if (cached) return res.json(cached);
+
     let page = null;
     try {
       page = await Page.findOne({ slug: req.params.slug });
@@ -218,6 +249,7 @@ router.get('/pages/:slug', async (req, res) => {
     if (!page) {
       return res.status(404).json({ message: 'Page not found' });
     }
+    setCached(cacheKey, page);
     res.json(page);
   } catch (err) {
     res.status(500).json({ message: 'Error fetching page', error: err.message });

@@ -148,9 +148,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { getPage } from '../api';
-import { useSeo } from '../composables/useSeo';
+import { usePageData } from '../composables/usePageData';
 import HeroBanner from '../components/common/HeroBanner.vue';
 import OverviewSection from '../components/common/OverviewSection.vue';
 import SectionCardsGrid from '../components/common/SectionCardsGrid.vue';
@@ -160,16 +158,5 @@ import FaqAccordion from '../components/common/FaqAccordion.vue';
 import CtaBanner from '../components/common/CtaBanner.vue';
 import AdSenseSlot from '../components/layout/AdSenseSlot.vue';
 
-const { setMeta } = useSeo();
-const pageData = ref(null);
-
-onMounted(async () => {
-  try {
-    const data = await getPage('home');
-    pageData.value = data;
-    setMeta(data);
-  } catch (err) {
-    console.error('Error fetching home page:', err);
-  }
-});
+const { pageData } = usePageData('home');
 </script>

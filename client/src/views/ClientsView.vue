@@ -111,9 +111,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { getPage } from '../api';
-import { useSeo } from '../composables/useSeo';
+import { usePageData } from '../composables/usePageData';
 import HeroBanner from '../components/common/HeroBanner.vue';
 import OverviewSection from '../components/common/OverviewSection.vue';
 import SectionCardsGrid from '../components/common/SectionCardsGrid.vue';
@@ -121,8 +119,7 @@ import FaqAccordion from '../components/common/FaqAccordion.vue';
 import CtaBanner from '../components/common/CtaBanner.vue';
 import AdSenseSlot from '../components/layout/AdSenseSlot.vue';
 
-const { setMeta } = useSeo();
-const pageData = ref(null);
+const { pageData } = usePageData('our-clients');
 
 const clientsList = [
   { name: 'Brighto Paints', logo: '/uploads/brighto-logo.png', sector: 'Paints & Coatings' },
@@ -138,14 +135,4 @@ const clientsList = [
   { name: 'Hussain Mills', logo: '/uploads/hussain-logo.png', sector: 'Textile Industry' },
   { name: 'Gifto', logo: '/uploads/gifto-logo.png', sector: 'Retail Chain' }
 ];
-
-onMounted(async () => {
-  try {
-    const data = await getPage('our-clients');
-    pageData.value = data;
-    setMeta(data);
-  } catch (err) {
-    console.error('Error fetching clients page:', err);
-  }
-});
 </script>

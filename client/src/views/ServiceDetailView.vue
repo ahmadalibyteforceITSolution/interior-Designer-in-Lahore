@@ -65,8 +65,9 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted } from 'vue';
+import { ref, watch, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
+import defaultPages from '../data/defaultPages.json';
 import { getPage } from '../api';
 import { useSeo } from '../composables/useSeo';
 import HeroBanner from '../components/common/HeroBanner.vue';
@@ -80,22 +81,45 @@ import AdSenseSlot from '../components/layout/AdSenseSlot.vue';
 const route = useRoute();
 const { setMeta } = useSeo();
 
-const pageData = ref(null);
-const loading = ref(true);
+const currentSlug = computed(() => route.params.slug || route.path.replace(/^\//, ''));
+
+function getInitialData(slug) {
+  return defaultPages.find(p => p.slug === slug) || null;
+}
+
+const initial = getInitialData(currentSlug.value);
+const pageData = ref(initial);
+const loading = ref(!initial);
 const error = ref(null);
 
+if (initial) {
+  setMeta(initial);
+}
+
 async function loadPageContent() {
-  loading.value = true;
+  const slug = currentSlug.value;
   error.value = null;
-  const slug = route.params.slug || route.path.replace(/^\//, '');
+
+  // Immediate fallback if not already set
+  if (!pageData.value) {
+    const fallback = getInitialData(slug);
+    if (fallback) {
+      pageData.value = fallback;
+      setMeta(fallback);
+      loading.value = false;
+    }
+  }
 
   try {
     const data = await getPage(slug);
-    pageData.value = data;
-    setMeta(data);
+    if (data && data.title) {
+      pageData.value = data;
+      setMeta(data);
+    }
   } catch (err) {
-    console.error('Error fetching page content:', err);
-    error.value = err.message;
+    if (!pageData.value) {
+      error.value = err.message;
+    }
   } finally {
     loading.value = false;
   }
@@ -107,6 +131,12 @@ watch(
   () => route.path,
   () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    const fallback = getInitialData(currentSlug.value);
+    if (fallback) {
+      pageData.value = fallback;
+      setMeta(fallback);
+      loading.value = false;
+    }
     loadPageContent();
   }
 );
