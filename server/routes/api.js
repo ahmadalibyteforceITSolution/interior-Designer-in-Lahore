@@ -52,6 +52,8 @@ const upload = multer({
     }
     cb(new Error('Only image files and MP4 videos are allowed'));
   }
+});
+
 // In-Memory Server Cache for Ultra-Fast Sub-10ms API Responses
 const serverCache = new Map();
 
