@@ -13,6 +13,15 @@ const Blog = require('../models/Blog');
 const Lead = require('../models/Lead');
 const User = require('../models/User');
 
+let defaultPages = [];
+let defaultSettings = {};
+try {
+  defaultPages = require('../data/defaultPages.json');
+} catch (e) {}
+try {
+  defaultSettings = require('../data/defaultSettings.json');
+} catch (e) {}
+
 const JWT_SECRET = process.env.JWT_SECRET || 'spaces_and_places_super_secret_jwt_key_2026';
 
 // Configure Multer for image uploads
@@ -145,23 +154,19 @@ router.get('/settings', async (req, res) => {
     if (cached) return res.json(cached);
 
     let settings = null;
-    try {
-      settings = await SiteSettings.findOne();
-    } catch (dbErr) {
-      console.warn('DB read error for settings, using file fallback:', dbErr.message);
-    }
-
-    if (!settings) {
-      const defaultSettingsPath = path.resolve(__dirname, '..', 'data', 'defaultSettings.json');
-      if (fs.existsSync(defaultSettingsPath)) {
-        settings = JSON.parse(fs.readFileSync(defaultSettingsPath, 'utf8'));
+    if (mongoose.connection.readyState === 1) {
+      try {
+        settings = await SiteSettings.findOne();
+      } catch (dbErr) {
+        console.warn('DB settings read error:', dbErr.message);
       }
     }
-    const finalData = settings || {};
+
+    const finalData = settings || defaultSettings || {};
     setCached('settings', finalData);
-    res.json(finalData);
+    return res.json(finalData);
   } catch (err) {
-    res.status(500).json({ message: 'Error fetching settings', error: err.message });
+    return res.json(defaultSettings || {});
   }
 });
 
@@ -192,67 +197,68 @@ router.get('/pages', async (req, res) => {
     if (cached) return res.json(cached);
 
     let pages = [];
-    try {
-      pages = await Page.find({}, 'slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
-    } catch (dbErr) {
-      console.warn('DB read error for pages, using file fallback:', dbErr.message);
+    if (mongoose.connection.readyState === 1) {
+      try {
+        pages = await Page.find({}, 'slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
+      } catch (dbErr) {
+        console.warn('DB pages read error:', dbErr.message);
+      }
     }
 
     if (!pages || pages.length === 0) {
-      const defaultPagesPath = path.resolve(__dirname, '..', 'data', 'defaultPages.json');
-      if (fs.existsSync(defaultPagesPath)) {
-        const list = JSON.parse(fs.readFileSync(defaultPagesPath, 'utf8'));
-        pages = list.map(p => ({
-          slug: p.slug,
-          title: p.title,
-          category: p.category,
-          metaTitle: p.metaTitle,
-          updatedAt: p.updatedAt || new Date().toISOString()
-        }));
-      }
+      pages = (defaultPages || []).map(p => ({
+        slug: p.slug,
+        title: p.title,
+        category: p.category,
+        metaTitle: p.metaTitle,
+        updatedAt: p.updatedAt || new Date().toISOString()
+      }));
     }
     setCached('pages_list', pages);
-    res.json(pages);
+    return res.json(pages);
   } catch (err) {
-    res.status(500).json({ message: 'Error fetching pages', error: err.message });
+    const fallbackList = (defaultPages || []).map(p => ({
+      slug: p.slug,
+      title: p.title,
+      category: p.category,
+      metaTitle: p.metaTitle,
+      updatedAt: new Date().toISOString()
+    }));
+    return res.json(fallbackList);
   }
 });
 
 router.get('/pages/:slug', async (req, res) => {
   try {
     res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
-    const cacheKey = `page_${req.params.slug}`;
+    const slug = req.params.slug;
+    const cacheKey = `page_${slug}`;
     const cached = getCached(cacheKey);
     if (cached) return res.json(cached);
 
     let page = null;
-    try {
-      page = await Page.findOne({ slug: req.params.slug });
-    } catch (dbErr) {
-      console.warn(`DB read error for page ${req.params.slug}, using file fallback:`, dbErr.message);
+    if (mongoose.connection.readyState === 1) {
+      try {
+        page = await Page.findOne({ slug });
+      } catch (dbErr) {
+        console.warn(`DB read error for ${slug}:`, dbErr.message);
+      }
     }
 
     if (!page) {
-      // Fallback check in defaultPages.json
-      const defaultPagesPath = path.resolve(__dirname, '..', 'data', 'defaultPages.json');
-      if (fs.existsSync(defaultPagesPath)) {
-        const list = JSON.parse(fs.readFileSync(defaultPagesPath, 'utf8'));
-        const found = list.find(p => p.slug === req.params.slug);
-        if (found) {
-          page = found;
-          try {
-            await Page.create(found);
-          } catch (e) {}
-        }
-      }
+      page = (defaultPages || []).find(p => p.slug === slug);
     }
+
     if (!page) {
       return res.status(404).json({ message: 'Page not found' });
     }
+
     setCached(cacheKey, page);
-    res.json(page);
+    return res.json(page);
   } catch (err) {
-    res.status(500).json({ message: 'Error fetching page', error: err.message });
+    const fallback = (defaultPages || []).find(p => p.slug === req.params.slug);
+    if (fallback) return res.json(fallback);
+    return res.status(404).json({ message: 'Page not found' });
   }
 });
 

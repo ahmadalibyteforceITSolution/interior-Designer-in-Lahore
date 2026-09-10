@@ -36,6 +36,18 @@ if (!fs.existsSync(uploadsDir)) {
 app.use('/uploads', express.static(uploadsDir));
 app.use('/wp-content/uploads', express.static(uploadsDir));
 
+// Database connection middleware for Serverless
+app.use(async (req, res, next) => {
+  if (MONGODB_URI && mongoose.connection.readyState !== 1) {
+    try {
+      await connectToDatabase();
+    } catch (err) {
+      console.warn('DB connect warning:', err.message);
+    }
+  }
+  next();
+});
+
 // API Routes
 app.use('/api', apiRoutes);
 
