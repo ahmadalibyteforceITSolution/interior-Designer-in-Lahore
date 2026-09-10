@@ -29,6 +29,13 @@
           View Live Page
         </a>
         <button
+          v-if="!isProtected(page.slug)"
+          @click="handleDelete"
+          class="px-3 py-2 border border-red-900/60 text-red-400 hover:bg-red-950/50 text-xs font-bold uppercase rounded transition-colors"
+        >
+          Delete Page
+        </button>
+        <button
           @click="saveChanges"
           :disabled="saving"
           class="px-6 py-2 bg-brand-gold hover:bg-brand-gold-light text-black text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-gold-glow disabled:opacity-50 flex items-center gap-2"
@@ -615,12 +622,19 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
-import { getPage, updatePage } from '../../api';
+import { useRoute, useRouter } from 'vue-router';
+import { getPage, updatePage, deletePage } from '../../api';
 import { useToast } from '../../composables/useToast';
 
 const route = useRoute();
+const router = useRouter();
 const { showToast } = useToast();
+
+const PROTECTED_SLUGS = ['home', 'about-us', 'our-clients', 'contact', 'blogs', 'privacy-policy', 'terms-conditions', 'disclaimer'];
+
+function isProtected(slug) {
+  return PROTECTED_SLUGS.includes(slug);
+}
 
 const page = ref(null);
 const loading = ref(true);
@@ -727,6 +741,24 @@ async function saveChanges() {
     showToast('Error saving: ' + err.message, 'error');
   } finally {
     saving.value = false;
+  }
+}
+
+async function handleDelete() {
+  if (isProtected(page.value.slug)) {
+    showToast('Core system pages cannot be deleted.', 'error');
+    return;
+  }
+
+  const confirmed = window.confirm(`Are you sure you want to permanently delete "/${page.value.slug}" (${page.value.title})? This will remove its live page and all sections.`);
+  if (!confirmed) return;
+
+  try {
+    await deletePage(page.value.slug);
+    showToast(`Page "/${page.value.slug}" deleted successfully.`, 'success');
+    router.push('/admin/pages');
+  } catch (err) {
+    showToast('Error deleting page: ' + err.message, 'error');
   }
 }
 </script>

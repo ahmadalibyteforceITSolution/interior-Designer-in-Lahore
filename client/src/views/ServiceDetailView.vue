@@ -111,7 +111,12 @@ async function loadPageContent() {
   }
 
   try {
-    const data = await getPage(slug);
+    const data = await getPage(slug, (fresh) => {
+      if (fresh && fresh.title) {
+        pageData.value = fresh;
+        setMeta(fresh);
+      }
+    });
     if (data && data.title) {
       pageData.value = data;
       setMeta(data);

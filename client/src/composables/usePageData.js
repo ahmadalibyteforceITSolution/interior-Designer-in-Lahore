@@ -1,4 +1,4 @@
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 import defaultPages from '../data/defaultPages.json';
 import { getPage } from '../api';
 import { useSeo } from './useSeo';
@@ -19,7 +19,7 @@ export function usePageData(slugRef) {
     setMeta(initial);
   }
 
-  async function loadData() {
+  async function loadData(force = false) {
     const slug = getSlug();
     if (!slug) return;
     
@@ -33,7 +33,13 @@ export function usePageData(slugRef) {
     }
 
     try {
-      const data = await getPage(slug);
+      const data = await getPage(slug, (fresh) => {
+        if (fresh && fresh.title) {
+          pageData.value = fresh;
+          setMeta(fresh);
+        }
+      }, force);
+
       if (data && data.title) {
         pageData.value = data;
         setMeta(data);
@@ -45,7 +51,24 @@ export function usePageData(slugRef) {
     }
   }
 
-  onMounted(loadData);
+  function handleStorageBust(e) {
+    if (e.key === 'snp_cache_bust') {
+      loadData(true);
+    }
+  }
+
+  onMounted(() => {
+    loadData();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('storage', handleStorageBust);
+    }
+  });
+
+  onUnmounted(() => {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('storage', handleStorageBust);
+    }
+  });
 
   return {
     pageData,

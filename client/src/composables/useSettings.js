@@ -26,10 +26,14 @@ const settings = ref({
 const isLoaded = ref(false);
 
 export function useSettings() {
-  async function loadSettings() {
-    if (isLoaded.value) return;
+  async function loadSettings(force = false) {
+    if (isLoaded.value && !force) return;
     try {
-      const data = await getSettings();
+      const data = await getSettings((fresh) => {
+        if (fresh && fresh.siteName) {
+          settings.value = { ...settings.value, ...fresh };
+        }
+      }, force);
       if (data && data.siteName) {
         settings.value = { ...settings.value, ...data };
       }
@@ -37,6 +41,14 @@ export function useSettings() {
     } catch (err) {
       console.warn('Using default settings (offline/loading)');
     }
+  }
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'snp_cache_bust') {
+        loadSettings(true);
+      }
+    });
   }
 
   function setSettings(newSettings) {

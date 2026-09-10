@@ -54,10 +54,16 @@ const upload = multer({
   }
 });
 
-// In-Memory Server Cache for Ultra-Fast Sub-10ms API Responses
+// In-Memory Server Cache with Instant Mutation Invalidation
 const serverCache = new Map();
 
-function getCached(key, ttl = 180000) {
+function setNoCacheHeaders(res) {
+  res.set('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+}
+
+function getCached(key, ttl = 30000) {
   const item = serverCache.get(key);
   if (item && (Date.now() - item.time < ttl)) {
     return item.data;
@@ -151,7 +157,7 @@ router.post('/auth/change-password', auth, async (req, res) => {
 
 router.get('/settings', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    setNoCacheHeaders(res);
     const cached = getCached('settings');
     if (cached) return res.json(cached);
 
@@ -182,6 +188,7 @@ router.put('/settings', auth, async (req, res) => {
       Object.assign(settings, req.body);
     }
     await settings.save();
+    clearServerCache();
     res.json({ message: 'Site settings updated successfully', settings });
   } catch (err) {
     res.status(500).json({ message: 'Error updating settings', error: err.message });
@@ -194,7 +201,7 @@ router.put('/settings', auth, async (req, res) => {
 
 router.get('/pages', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    setNoCacheHeaders(res);
     const cached = getCached('pages_list');
     if (cached) return res.json(cached);
 
@@ -232,7 +239,7 @@ router.get('/pages', async (req, res) => {
 
 router.get('/pages/:slug', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    setNoCacheHeaders(res);
     const slug = req.params.slug;
     const cacheKey = `page_${slug}`;
     const cached = getCached(cacheKey);
@@ -266,12 +273,15 @@ router.get('/pages/:slug', async (req, res) => {
 
 router.put('/pages/:slug', auth, async (req, res) => {
   try {
+    clearServerCache();
     const updateData = req.body;
+    updateData.updatedAt = new Date();
     const page = await Page.findOneAndUpdate(
       { slug: req.params.slug },
       { $set: updateData },
       { new: true, upsert: true }
     );
+    clearServerCache();
     res.json({ message: 'Page updated successfully', page });
   } catch (err) {
     res.status(500).json({ message: 'Error updating page', error: err.message });
@@ -280,16 +290,110 @@ router.put('/pages/:slug', auth, async (req, res) => {
 
 router.post('/pages', auth, async (req, res) => {
   try {
+    clearServerCache();
     const { slug, title, category } = req.body;
     if (!slug || !title) {
       return res.status(400).json({ message: 'Slug and title are required' });
     }
-    const existing = await Page.findOne({ slug });
-    if (existing) {
-      return res.status(400).json({ message: 'Page slug already exists' });
+
+    const cleanSlug = slug.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    if (!cleanSlug) {
+      return res.status(400).json({ message: 'Invalid slug generated' });
     }
-    const newPage = new Page(req.body);
+
+    const existing = await Page.findOne({ slug: cleanSlug });
+    if (existing) {
+      return res.status(400).json({ message: `Page route /${cleanSlug} already exists.` });
+    }
+
+    const pagePayload = {
+      slug: cleanSlug,
+      title: title.trim(),
+      category: category || 'interior-design',
+      metaTitle: req.body.metaTitle || `${title.trim()} | Spaces & Places Lahore`,
+      metaDescription: req.body.metaDescription || `Discover bespoke luxury ${title.trim()} by Spaces & Places, leading architects and interior designers in Lahore.`,
+      focusKeywords: req.body.focusKeywords || `${title.trim()}, Interior Designers in Lahore, Architects in Lahore`,
+      canonicalUrl: req.body.canonicalUrl || `https://spacesandplaces.com.pk/${cleanSlug}`,
+      ogImage: req.body.ogImage || '/uploads/living-eye-level.jpg',
+      indexRobots: req.body.indexRobots !== undefined ? req.body.indexRobots : true,
+      hero: req.body.hero || {
+        badge: 'SPACES & PLACES STUDIO',
+        title: title.trim().toUpperCase(),
+        subtitle: 'From concept to turnkey delivery, we combine creativity, precision, and craftsmanship to design breathtaking spaces.',
+        bgImage: '/uploads/living-eye-level.jpg',
+        bgVideo: '',
+        ctaText: "LET'S TALK",
+        ctaLink: '/contact'
+      },
+      overview: req.body.overview || {
+        badge: 'OVERVIEW & PRACTICE',
+        title: `Mastering ${title.trim()} in Lahore`,
+        subtitle: 'Bespoke design concepts paired with uncompromising structural craftsmanship.',
+        paragraph1: `Spaces & Places is an acclaimed design and architectural firm established in Lahore. We specialize in bespoke ${title.trim()}, combining spatial ergonomics with timeless aesthetics.`,
+        paragraph2: 'Our team of licensed architects, interior designers, 3D visualizers, and site engineers ensure every marla is utilized to its pinnacle of elegance and functionality.',
+        highlights: [
+          'Turnkey solutions from conceptual blueprints to final decor',
+          'In-house custom solid wood and brass furniture manufacturing',
+          'Photorealistic 3D CGI visualizations and lighting models',
+          'Rigorous BOQ transparency and timeline guarantees'
+        ],
+        image: '/uploads/01-01-8.jpg'
+      },
+      sections: req.body.sections || [
+        {
+          id: 'sec-' + Date.now() + '-1',
+          title: 'Spatial Planning & Architecture',
+          subtitle: 'Phase 01',
+          description: 'Meticulous layout drafting, lighting zoning, and spatial flow optimization tailored to your lifestyle.',
+          icon: 'Palette',
+          image: '/uploads/01-02-9.jpg',
+          points: ['Ergonomic zoning', 'Photorealistic 3D walk-throughs', 'LDA and society bylaws compliance']
+        },
+        {
+          id: 'sec-' + Date.now() + '-2',
+          title: 'Premium Structural Execution',
+          subtitle: 'Phase 02',
+          description: 'Uncompromising engineering supervision using A-grade materials, structural testing, and precision joinery.',
+          icon: 'Building2',
+          image: '/uploads/01-03-7.jpg',
+          points: ['Structural site engineers on-premise', 'PPRC pressure testing', 'Imported porcelain tile & marble']
+        },
+        {
+          id: 'sec-' + Date.now() + '-3',
+          title: 'Bespoke Furniture & Handover',
+          subtitle: 'Phase 03',
+          description: 'Handcrafted luxury solid wood furniture, bespoke architectural illumination, and turnkey handover.',
+          icon: 'Armchair',
+          image: '/uploads/01-05-6.jpg',
+          points: ['Factory direct woodwork', 'Warm 2700K ambient illumination', '100% turnkey handover guarantee']
+        }
+      ],
+      gallery: req.body.gallery || [
+        { title: `${title.trim()} Showcase 01`, image: '/uploads/01-01-8.jpg', category: 'Showcase', alt: `${title} luxury design` },
+        { title: `${title.trim()} Showcase 02`, image: '/uploads/01-02-9.jpg', category: 'Showcase', alt: `${title} modern lounge` },
+        { title: `${title.trim()} Showcase 03`, image: '/uploads/01-03-7.jpg', category: 'Showcase', alt: `${title} executive finish` }
+      ],
+      faqs: req.body.faqs || [
+        {
+          question: `What makes Spaces & Places unique for ${title.trim()}?`,
+          answer: 'Spaces & Places delivers a fully unified lifecycle under one roof: architectural blueprints, 3D photorealistic visualizations, full-scale construction, and custom furniture manufacturing.'
+        },
+        {
+          question: 'Do you consult outside Lahore in other cities?',
+          answer: 'Yes! While our primary studio is based in DHA Phase 6 Lahore, we design and consult across Islamabad, Rawalpindi, Faisalabad, and Karachi.'
+        }
+      ],
+      cta: req.body.cta || {
+        title: `Ready to Bring Your ${title.trim()} Vision to Life?`,
+        subtitle: 'Book a discovery session with our lead architects and interior styling consultants in Lahore.',
+        buttonText: 'BOOK A CONSULTATION',
+        buttonLink: '/contact'
+      }
+    };
+
+    const newPage = new Page(pagePayload);
     await newPage.save();
+    clearServerCache();
     res.status(201).json({ message: 'Page created successfully', page: newPage });
   } catch (err) {
     res.status(500).json({ message: 'Error creating page', error: err.message });
@@ -298,8 +402,15 @@ router.post('/pages', auth, async (req, res) => {
 
 router.delete('/pages/:slug', auth, async (req, res) => {
   try {
+    clearServerCache();
+    const PROTECTED_PAGES = ['home', 'about-us', 'our-clients', 'contact', 'blogs', 'privacy-policy', 'terms-conditions', 'disclaimer'];
+    if (PROTECTED_PAGES.includes(req.params.slug)) {
+      return res.status(400).json({ message: 'Core system pages cannot be deleted.' });
+    }
+
     const deleted = await Page.findOneAndDelete({ slug: req.params.slug });
     if (!deleted) return res.status(404).json({ message: 'Page not found' });
+    clearServerCache();
     res.json({ message: 'Page deleted successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Error deleting page', error: err.message });
@@ -312,6 +423,7 @@ router.delete('/pages/:slug', auth, async (req, res) => {
 
 router.get('/seo', async (req, res) => {
   try {
+    setNoCacheHeaders(res);
     const pages = await Page.find({}, 'slug title category metaTitle metaDescription focusKeywords canonicalUrl ogImage indexRobots updatedAt');
     res.json(pages);
   } catch (err) {
@@ -321,6 +433,7 @@ router.get('/seo', async (req, res) => {
 
 router.put('/seo/:slug', auth, async (req, res) => {
   try {
+    clearServerCache();
     const { metaTitle, metaDescription, focusKeywords, canonicalUrl, ogImage, indexRobots } = req.body;
     const updated = await Page.findOneAndUpdate(
       { slug: req.params.slug },
@@ -328,6 +441,7 @@ router.put('/seo/:slug', auth, async (req, res) => {
       { new: true }
     );
     if (!updated) return res.status(404).json({ message: 'Page not found' });
+    clearServerCache();
     res.json({ message: 'SEO updated successfully', page: updated });
   } catch (err) {
     res.status(500).json({ message: 'Error updating SEO', error: err.message });
@@ -336,6 +450,7 @@ router.put('/seo/:slug', auth, async (req, res) => {
 
 router.get('/seo/robots', async (req, res) => {
   try {
+    setNoCacheHeaders(res);
     const settings = await SiteSettings.findOne();
     const robots = settings && settings.robotsTxt
       ? settings.robotsTxt
@@ -348,6 +463,7 @@ router.get('/seo/robots', async (req, res) => {
 
 router.put('/seo/robots', auth, async (req, res) => {
   try {
+    clearServerCache();
     const { robotsTxt } = req.body;
     let settings = await SiteSettings.findOne();
     if (!settings) {
@@ -356,6 +472,7 @@ router.put('/seo/robots', auth, async (req, res) => {
       settings.robotsTxt = robotsTxt;
     }
     await settings.save();
+    clearServerCache();
     res.json({ message: 'robots.txt updated successfully', robotsTxt });
   } catch (err) {
     res.status(500).json({ message: 'Error saving robots.txt', error: err.message });
@@ -368,7 +485,7 @@ router.put('/seo/robots', auth, async (req, res) => {
 
 router.get('/blogs', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    setNoCacheHeaders(res);
     const { category, search } = req.query;
     let query = {};
     if (category && category !== 'All') {
@@ -395,7 +512,7 @@ router.get('/blogs', async (req, res) => {
 
 router.get('/blogs/:slug', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
+    setNoCacheHeaders(res);
     const blog = await Blog.findOne({ slug: req.params.slug });
     if (!blog) return res.status(404).json({ message: 'Blog post not found' });
     res.json(blog);
@@ -406,8 +523,10 @@ router.get('/blogs/:slug', async (req, res) => {
 
 router.post('/blogs', auth, async (req, res) => {
   try {
+    clearServerCache();
     const newBlog = new Blog(req.body);
     await newBlog.save();
+    clearServerCache();
     res.status(201).json({ message: 'Blog post created successfully', blog: newBlog });
   } catch (err) {
     res.status(500).json({ message: 'Error creating blog', error: err.message });
@@ -416,8 +535,10 @@ router.post('/blogs', auth, async (req, res) => {
 
 router.put('/blogs/:id', auth, async (req, res) => {
   try {
+    clearServerCache();
     const updated = await Blog.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updated) return res.status(404).json({ message: 'Blog not found' });
+    clearServerCache();
     res.json({ message: 'Blog updated successfully', blog: updated });
   } catch (err) {
     res.status(500).json({ message: 'Error updating blog', error: err.message });
@@ -426,8 +547,10 @@ router.put('/blogs/:id', auth, async (req, res) => {
 
 router.delete('/blogs/:id', auth, async (req, res) => {
   try {
+    clearServerCache();
     const deleted = await Blog.findByIdAndDelete(req.params.id);
     if (!deleted) return res.status(404).json({ message: 'Blog not found' });
+    clearServerCache();
     res.json({ message: 'Blog deleted successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Error deleting blog', error: err.message });
