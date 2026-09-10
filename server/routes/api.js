@@ -5,6 +5,7 @@ const bcrypt = require('bcryptjs');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const mongoose = require('mongoose');
 
 const auth = require('../middleware/auth');
 const SiteSettings = require('../models/SiteSettings');
@@ -77,6 +78,30 @@ function setCached(key, data) {
 
 function clearServerCache() {
   serverCache.clear();
+}
+
+const DEFAULT_MONGODB_URI = 'mongodb+srv://ahmedalihafeez25_db_user:%40Sublime12345@cluster0.oe0inne.mongodb.net/spaceandplaces?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
+
+async function ensureDb() {
+  if (mongoose.connection.readyState !== 1) {
+    try {
+      await mongoose.connect(MONGODB_URI, {
+        serverSelectionTimeoutMS: 5000,
+        maxPoolSize: 10
+      });
+    } catch (err) {
+      console.warn('DB connect warning in api.js:', err.message);
+    }
+  }
+}
+
+function getIdOrSlugQuery(identifier) {
+  if (!identifier) return {};
+  if (mongoose.Types.ObjectId.isValid(identifier) && identifier.length === 24) {
+    return { $or: [{ _id: identifier }, { slug: identifier }] };
+  }
+  return { slug: identifier };
 }
 
 // ==========================================
@@ -161,13 +186,12 @@ router.get('/settings', async (req, res) => {
     const cached = getCached('settings');
     if (cached) return res.json(cached);
 
+    await ensureDb();
     let settings = null;
-    if (mongoose.connection.readyState === 1) {
-      try {
-        settings = await SiteSettings.findOne();
-      } catch (dbErr) {
-        console.warn('DB settings read error:', dbErr.message);
-      }
+    try {
+      settings = await SiteSettings.findOne();
+    } catch (dbErr) {
+      console.warn('DB settings read error:', dbErr.message);
     }
 
     const finalData = settings || defaultSettings || {};
@@ -181,6 +205,7 @@ router.get('/settings', async (req, res) => {
 router.put('/settings', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
     let settings = await SiteSettings.findOne();
     if (!settings) {
       settings = new SiteSettings(req.body);
@@ -205,17 +230,17 @@ router.get('/pages', async (req, res) => {
     const cached = getCached('pages_list');
     if (cached) return res.json(cached);
 
+    await ensureDb();
     let pages = [];
-    if (mongoose.connection.readyState === 1) {
-      try {
-        pages = await Page.find({}, 'slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
-      } catch (dbErr) {
-        console.warn('DB pages read error:', dbErr.message);
-      }
+    try {
+      pages = await Page.find({}, '_id slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
+    } catch (dbErr) {
+      console.warn('DB pages read error:', dbErr.message);
     }
 
     if (!pages || pages.length === 0) {
       pages = (defaultPages || []).map(p => ({
+        _id: p._id,
         slug: p.slug,
         title: p.title,
         category: p.category,
@@ -227,6 +252,7 @@ router.get('/pages', async (req, res) => {
     return res.json(pages);
   } catch (err) {
     const fallbackList = (defaultPages || []).map(p => ({
+      _id: p._id,
       slug: p.slug,
       title: p.title,
       category: p.category,
@@ -237,25 +263,24 @@ router.get('/pages', async (req, res) => {
   }
 });
 
-router.get('/pages/:slug', async (req, res) => {
+router.get('/pages/:identifier', async (req, res) => {
   try {
     setNoCacheHeaders(res);
-    const slug = req.params.slug;
-    const cacheKey = `page_${slug}`;
+    const identifier = req.params.identifier;
+    const cacheKey = `page_${identifier}`;
     const cached = getCached(cacheKey);
     if (cached) return res.json(cached);
 
+    await ensureDb();
     let page = null;
-    if (mongoose.connection.readyState === 1) {
-      try {
-        page = await Page.findOne({ slug });
-      } catch (dbErr) {
-        console.warn(`DB read error for ${slug}:`, dbErr.message);
-      }
+    try {
+      page = await Page.findOne(getIdOrSlugQuery(identifier));
+    } catch (dbErr) {
+      console.warn(`DB read error for ${identifier}:`, dbErr.message);
     }
 
     if (!page) {
-      page = (defaultPages || []).find(p => p.slug === slug);
+      page = (defaultPages || []).find(p => p.slug === identifier || (p._id && p._id.toString() === identifier));
     }
 
     if (!page) {
@@ -265,19 +290,23 @@ router.get('/pages/:slug', async (req, res) => {
     setCached(cacheKey, page);
     return res.json(page);
   } catch (err) {
-    const fallback = (defaultPages || []).find(p => p.slug === req.params.slug);
+    const fallback = (defaultPages || []).find(p => p.slug === req.params.identifier || (p._id && p._id.toString() === req.params.identifier));
     if (fallback) return res.json(fallback);
     return res.status(404).json({ message: 'Page not found' });
   }
 });
 
-router.put('/pages/:slug', auth, async (req, res) => {
+router.put('/pages/:identifier', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
+    const identifier = req.params.identifier;
+    const query = getIdOrSlugQuery(identifier);
     const updateData = req.body;
     updateData.updatedAt = new Date();
+
     const page = await Page.findOneAndUpdate(
-      { slug: req.params.slug },
+      query,
       { $set: updateData },
       { new: true, upsert: true }
     );
@@ -291,6 +320,7 @@ router.put('/pages/:slug', auth, async (req, res) => {
 router.post('/pages', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
     const { slug, title, category } = req.body;
     if (!slug || !title) {
       return res.status(400).json({ message: 'Slug and title are required' });
@@ -317,7 +347,7 @@ router.post('/pages', auth, async (req, res) => {
       ogImage: req.body.ogImage || '/uploads/living-eye-level.jpg',
       indexRobots: req.body.indexRobots !== undefined ? req.body.indexRobots : true,
       hero: req.body.hero || {
-        badge: 'SPACES & PLACES STUDIO',
+        badge: 'SPACES & PLACES',
         title: title.trim().toUpperCase(),
         subtitle: 'From concept to turnkey delivery, we combine creativity, precision, and craftsmanship to design breathtaking spaces.',
         bgImage: '/uploads/living-eye-level.jpg',
@@ -400,15 +430,23 @@ router.post('/pages', auth, async (req, res) => {
   }
 });
 
-router.delete('/pages/:slug', auth, async (req, res) => {
+router.delete('/pages/:identifier', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
+    const identifier = req.params.identifier;
+    const query = getIdOrSlugQuery(identifier);
+    const existing = await Page.findOne(query);
+
     const PROTECTED_PAGES = ['home', 'about-us', 'our-clients', 'contact', 'blogs', 'privacy-policy', 'terms-conditions', 'disclaimer'];
-    if (PROTECTED_PAGES.includes(req.params.slug)) {
+    if (existing && PROTECTED_PAGES.includes(existing.slug)) {
+      return res.status(400).json({ message: 'Core system pages cannot be deleted.' });
+    }
+    if (PROTECTED_PAGES.includes(identifier)) {
       return res.status(400).json({ message: 'Core system pages cannot be deleted.' });
     }
 
-    const deleted = await Page.findOneAndDelete({ slug: req.params.slug });
+    const deleted = await Page.findOneAndDelete(query);
     if (!deleted) return res.status(404).json({ message: 'Page not found' });
     clearServerCache();
     res.json({ message: 'Page deleted successfully' });
@@ -424,19 +462,22 @@ router.delete('/pages/:slug', auth, async (req, res) => {
 router.get('/seo', async (req, res) => {
   try {
     setNoCacheHeaders(res);
-    const pages = await Page.find({}, 'slug title category metaTitle metaDescription focusKeywords canonicalUrl ogImage indexRobots updatedAt');
+    await ensureDb();
+    const pages = await Page.find({}, '_id slug title category metaTitle metaDescription focusKeywords canonicalUrl ogImage indexRobots updatedAt');
     res.json(pages);
   } catch (err) {
     res.status(500).json({ message: 'Error fetching SEO items', error: err.message });
   }
 });
 
-router.put('/seo/:slug', auth, async (req, res) => {
+router.put('/seo/:identifier', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
     const { metaTitle, metaDescription, focusKeywords, canonicalUrl, ogImage, indexRobots } = req.body;
+    const query = getIdOrSlugQuery(req.params.identifier);
     const updated = await Page.findOneAndUpdate(
-      { slug: req.params.slug },
+      query,
       { $set: { metaTitle, metaDescription, focusKeywords, canonicalUrl, ogImage, indexRobots } },
       { new: true }
     );
@@ -451,6 +492,7 @@ router.put('/seo/:slug', auth, async (req, res) => {
 router.get('/seo/robots', async (req, res) => {
   try {
     setNoCacheHeaders(res);
+    await ensureDb();
     const settings = await SiteSettings.findOne();
     const robots = settings && settings.robotsTxt
       ? settings.robotsTxt
@@ -464,6 +506,7 @@ router.get('/seo/robots', async (req, res) => {
 router.put('/seo/robots', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
     const { robotsTxt } = req.body;
     let settings = await SiteSettings.findOne();
     if (!settings) {
@@ -486,6 +529,7 @@ router.put('/seo/robots', auth, async (req, res) => {
 router.get('/blogs', async (req, res) => {
   try {
     setNoCacheHeaders(res);
+    await ensureDb();
     const { category, search } = req.query;
     let query = {};
     if (category && category !== 'All') {
@@ -510,10 +554,11 @@ router.get('/blogs', async (req, res) => {
   }
 });
 
-router.get('/blogs/:slug', async (req, res) => {
+router.get('/blogs/:identifier', async (req, res) => {
   try {
     setNoCacheHeaders(res);
-    const blog = await Blog.findOne({ slug: req.params.slug });
+    await ensureDb();
+    const blog = await Blog.findOne(getIdOrSlugQuery(req.params.identifier));
     if (!blog) return res.status(404).json({ message: 'Blog post not found' });
     res.json(blog);
   } catch (err) {
@@ -524,6 +569,11 @@ router.get('/blogs/:slug', async (req, res) => {
 router.post('/blogs', auth, async (req, res) => {
   try {
     clearServerCache();
+    await ensureDb();
+    if (!req.body.excerpt) {
+      const stripped = (req.body.content || '').replace(/<[^>]+>/g, '').trim();
+      req.body.excerpt = stripped.slice(0, 160) || req.body.title || 'Spaces & Places architectural and interior design journal.';
+    }
     const newBlog = new Blog(req.body);
     await newBlog.save();
     clearServerCache();
@@ -533,10 +583,12 @@ router.post('/blogs', auth, async (req, res) => {
   }
 });
 
-router.put('/blogs/:id', auth, async (req, res) => {
+router.put('/blogs/:identifier', auth, async (req, res) => {
   try {
     clearServerCache();
-    const updated = await Blog.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    await ensureDb();
+    const query = getIdOrSlugQuery(req.params.identifier);
+    const updated = await Blog.findOneAndUpdate(query, req.body, { new: true });
     if (!updated) return res.status(404).json({ message: 'Blog not found' });
     clearServerCache();
     res.json({ message: 'Blog updated successfully', blog: updated });
@@ -545,10 +597,12 @@ router.put('/blogs/:id', auth, async (req, res) => {
   }
 });
 
-router.delete('/blogs/:id', auth, async (req, res) => {
+router.delete('/blogs/:identifier', auth, async (req, res) => {
   try {
     clearServerCache();
-    const deleted = await Blog.findByIdAndDelete(req.params.id);
+    await ensureDb();
+    const query = getIdOrSlugQuery(req.params.identifier);
+    const deleted = await Blog.findOneAndDelete(query);
     if (!deleted) return res.status(404).json({ message: 'Blog not found' });
     clearServerCache();
     res.json({ message: 'Blog deleted successfully' });
@@ -563,6 +617,7 @@ router.delete('/blogs/:id', auth, async (req, res) => {
 
 router.post('/leads', async (req, res) => {
   try {
+    await ensureDb();
     const { name, email, phone, service, message, source } = req.body;
     if (!name || !email) {
       return res.status(400).json({ message: 'Name and email are required' });
@@ -584,6 +639,7 @@ router.post('/leads', async (req, res) => {
 
 router.get('/leads', auth, async (req, res) => {
   try {
+    await ensureDb();
     const leads = await Lead.find().sort({ createdAt: -1 });
     res.json(leads);
   } catch (err) {
@@ -593,6 +649,7 @@ router.get('/leads', auth, async (req, res) => {
 
 router.put('/leads/:id', auth, async (req, res) => {
   try {
+    await ensureDb();
     const updated = await Lead.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!updated) return res.status(404).json({ message: 'Lead not found' });
     res.json({ message: 'Lead status updated', lead: updated });

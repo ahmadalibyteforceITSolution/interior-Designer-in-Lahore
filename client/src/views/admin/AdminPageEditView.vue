@@ -735,7 +735,8 @@ function removeFaq(idx) {
 async function saveChanges() {
   saving.value = true;
   try {
-    await updatePage(page.value.slug, page.value);
+    const targetIdentifier = page.value._id || route.params.slug || page.value.slug;
+    await updatePage(targetIdentifier, page.value);
     showToast('All page sections saved to MongoDB successfully!', 'success');
   } catch (err) {
     showToast('Error saving: ' + err.message, 'error');
@@ -754,7 +755,8 @@ async function handleDelete() {
   if (!confirmed) return;
 
   try {
-    await deletePage(page.value.slug);
+    const targetIdentifier = page.value._id || page.value.slug;
+    await deletePage(targetIdentifier);
     showToast(`Page "/${page.value.slug}" deleted successfully.`, 'success');
     router.push('/admin/pages');
   } catch (err) {

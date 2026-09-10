@@ -267,7 +267,8 @@ async function savePageSeo() {
   if (!selectedPage.value) return;
   savingSeo.value = true;
   try {
-    await updateSeo(selectedPage.value.slug, selectedPage.value);
+    const targetIdentifier = selectedPage.value._id || selectedPage.value.slug;
+    await updateSeo(targetIdentifier, selectedPage.value);
     showToast(`SEO updated for ${selectedPage.value.title}!`, 'success');
   } catch (err) {
     showToast('Error saving SEO: ' + err.message, 'error');

@@ -1,4 +1,4 @@
-﻿const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
   title: { type: String, required: true },
@@ -6,7 +6,7 @@ const blogSchema = new mongoose.Schema({
   category: { type: String, default: 'Interior Design' },
   author: { type: String, default: 'Spaces & Places Editorial' },
   readTime: { type: String, default: '5 min read' },
-  excerpt: { type: String, required: true },
+  excerpt: { type: String, default: '' },
   content: { type: String, required: true },
   featuredImage: { type: String, default: '/uploads/living-eye-level.jpg' },
   tags: [{ type: String }],

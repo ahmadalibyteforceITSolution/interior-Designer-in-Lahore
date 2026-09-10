@@ -373,8 +373,9 @@ async function handleDeletePage(page) {
 
   deletingSlug.value = page.slug;
   try {
-    await deletePage(page.slug);
-    pages.value = pages.value.filter(p => p.slug !== page.slug);
+    const targetIdentifier = page._id || page.slug;
+    await deletePage(targetIdentifier);
+    pages.value = pages.value.filter(p => (page._id ? p._id !== page._id : p.slug !== page.slug));
     showToast(`Page "/${page.slug}" deleted successfully.`, 'success');
   } catch (err) {
     showToast('Error deleting page: ' + err.message, 'error');

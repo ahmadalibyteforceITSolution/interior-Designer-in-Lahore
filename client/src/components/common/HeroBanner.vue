@@ -38,12 +38,22 @@
         
         <!-- Breadcrumb / Badge -->
         <div class="flex items-center gap-3">
-          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-gold/15 border border-brand-gold/50 text-brand-gold text-[11px] font-bold tracking-widest uppercase shadow-gold-glow backdrop-blur-sm">
+          <span
+            v-if="heroData && heroData.badge && heroData.badge.trim()"
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-gold/15 border border-brand-gold/50 text-brand-gold text-[11px] font-bold tracking-widest uppercase shadow-gold-glow backdrop-blur-sm"
+          >
             <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
-            {{ heroData?.badge || 'SPACES & PLACES STUDIO' }}
+            {{ heroData.badge.trim() }}
           </span>
-          <span v-if="categoryName" class="text-xs text-gray-400 uppercase tracking-widest font-mono">
-            / {{ categoryName }}
+          <span
+            v-else-if="!heroData"
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-gold/15 border border-brand-gold/50 text-brand-gold text-[11px] font-bold tracking-widest uppercase shadow-gold-glow backdrop-blur-sm"
+          >
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+            SPACES & PLACES
+          </span>
+          <span v-if="categoryName && categoryName.trim()" class="text-xs text-gray-400 uppercase tracking-widest font-mono">
+            / {{ categoryName.trim() }}
           </span>
         </div>
 

@@ -4,7 +4,7 @@
     <!-- Hero Banner -->
     <HeroBanner
       :hero-data="pageData?.hero"
-      category-name="STUDIO LAHORE"
+      :category-name="pageData?.hero?.tag || ''"
       service-name="General Architectural & Interior Inquiry"
     />
 

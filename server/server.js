@@ -1,10 +1,8 @@
 require('dotenv').config();
-if (!process.env.VERCEL) {
-  try {
-    const dns = require('dns');
-    dns.setServers(['8.8.8.8', '8.8.4.4']); // Local DNS SRV resolution
-  } catch (e) {}
-}
+try {
+  const dns = require('dns');
+  dns.setServers(['8.8.8.8', '8.8.4.4']); // High-performance SRV DNS resolution
+} catch (e) {}
 
 const express = require('express');
 const cors = require('cors');
@@ -21,7 +19,8 @@ const seedDatabase = require('./seedData');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGODB_URI = process.env.MONGODB_URI;
+const DEFAULT_MONGODB_URI = 'mongodb+srv://ahmedalihafeez25_db_user:%40Sublime12345@cluster0.oe0inne.mongodb.net/spaceandplaces?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGODB_URI;
 
 // Middleware
 app.use(cors());
@@ -38,7 +37,7 @@ app.use('/wp-content/uploads', express.static(uploadsDir));
 
 // Database connection middleware for Serverless
 app.use(async (req, res, next) => {
-  if (MONGODB_URI && mongoose.connection.readyState !== 1) {
+  if (mongoose.connection.readyState !== 1) {
     try {
       await connectToDatabase();
     } catch (err) {
