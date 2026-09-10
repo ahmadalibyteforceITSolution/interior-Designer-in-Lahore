@@ -123,6 +123,7 @@ router.post('/auth/change-password', auth, async (req, res) => {
 
 router.get('/settings', async (req, res) => {
   try {
+    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     let settings = null;
     try {
       settings = await SiteSettings.findOne();
@@ -163,6 +164,7 @@ router.put('/settings', auth, async (req, res) => {
 
 router.get('/pages', async (req, res) => {
   try {
+    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     let pages = [];
     try {
       pages = await Page.find({}, 'slug title category metaTitle updatedAt').sort({ category: 1, title: 1 });
@@ -191,6 +193,7 @@ router.get('/pages', async (req, res) => {
 
 router.get('/pages/:slug', async (req, res) => {
   try {
+    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     let page = null;
     try {
       page = await Page.findOne({ slug: req.params.slug });
@@ -325,6 +328,7 @@ router.put('/seo/robots', auth, async (req, res) => {
 
 router.get('/blogs', async (req, res) => {
   try {
+    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     const { category, search } = req.query;
     let query = {};
     if (category && category !== 'All') {
@@ -351,6 +355,7 @@ router.get('/blogs', async (req, res) => {
 
 router.get('/blogs/:slug', async (req, res) => {
   try {
+    res.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     const blog = await Blog.findOne({ slug: req.params.slug });
     if (!blog) return res.status(404).json({ message: 'Blog post not found' });
     res.json(blog);

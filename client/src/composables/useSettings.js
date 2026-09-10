@@ -9,7 +9,7 @@ const settings = ref({
   email: 'contact@spacezandplaces.com',
   address: '5CCA, 5th Floor, Block C, DHA Phase 6, Lahore',
   workingHours: 'Monday - Saturday: 9:00 AM - 7:00 PM',
-  logoUrl: '/logo.png',
+  logoUrl: '/uploads/header-logo.webp',
   logoDarkUrl: '/logo-dark.png',
   footerLogoUrl: '/uploads/SP-Logo-for-web-footer-1.png',
   adsensePublisherId: 'ca-pub-9876543210123456',
