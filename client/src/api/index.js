@@ -5,8 +5,22 @@ function getAuthHeader() {
   return token ? { 'Authorization': `Bearer ${token}` } : {};
 }
 
-// In-Memory & Session SWR Cache with Cross-Tab Invalidation
+// In-Memory & Session SWR Cache with Cross-Tab Invalidation & Versioning
+const SNP_CACHE_VERSION = 'v5_distinct_designs';
 const apiMemoryCache = new Map();
+
+if (typeof window !== 'undefined') {
+  try {
+    if (localStorage.getItem('snp_app_cache_version') !== SNP_CACHE_VERSION) {
+      localStorage.setItem('snp_app_cache_version', SNP_CACHE_VERSION);
+      const sessionKeys = Object.keys(sessionStorage);
+      for (const k of sessionKeys) {
+        if (k.startsWith('snp_swr_')) sessionStorage.removeItem(k);
+      }
+      apiMemoryCache.clear();
+    }
+  } catch (e) {}
+}
 
 export function clearCache() {
   apiMemoryCache.clear();

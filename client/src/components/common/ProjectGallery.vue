@@ -4,19 +4,19 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
-        <span class="text-xs font-bold text-amber-700 dark:text-brand-gold tracking-widest uppercase">OUR PORTFOLIO</span>
+        <span class="text-xs font-bold text-amber-700 dark:text-brand-gold tracking-widest uppercase">{{ sectionBadge || 'OUR PORTFOLIO' }}</span>
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-heading font-black text-gray-900 dark:text-white uppercase tracking-tight">
-          CURATED ARCHITECTURAL & INTERIOR PROJECTS
+          {{ sectionTitle || 'CURATED ARCHITECTURAL & INTERIOR PROJECTS' }}
         </h2>
         <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-          Explore our award-winning residential estates, bespoke commercial spaces, and iconic corporate ateliers across Pakistan and the UAE.
+          {{ sectionSubtitle || 'Explore our award-winning residential estates, bespoke commercial spaces, and iconic corporate ateliers across Pakistan and the UAE.' }}
         </p>
       </div>
 
       <!-- Filter Bar -->
-      <div class="snp-port-filters">
+      <div v-if="availableCategories.length > 2" class="snp-port-filters">
         <button
-          v-for="cat in ['all', 'Residential', 'Commercial']"
+          v-for="cat in availableCategories"
           :key="cat"
           @click="setFilter(cat)"
           :class="['snp-port-filter-btn', currentFilter === cat ? 'active' : '']"
@@ -137,6 +137,18 @@ const props = defineProps({
   gallery: {
     type: Array,
     default: () => []
+  },
+  sectionBadge: {
+    type: String,
+    default: ''
+  },
+  sectionTitle: {
+    type: String,
+    default: ''
+  },
+  sectionSubtitle: {
+    type: String,
+    default: ''
   }
 });
 
@@ -150,8 +162,32 @@ const activeIdx = ref(0);
 const thumbsRef = ref(null);
 
 const allProjects = computed(() => {
-  const list = rawProjects && rawProjects.length > 0 ? rawProjects : (props.gallery || []);
+  if (props.gallery && props.gallery.length > 0) {
+    return props.gallery.map((g, idx) => {
+      const cover = g.image || g.cover || '/uploads/01-01-8.jpg';
+      const images = (g.images && g.images.length > 0)
+        ? g.images
+        : [{ src: cover, title: g.title, desc: g.description || g.desc || g.title }];
+      return {
+        id: g.id || `gallery-item-${idx}`,
+        title: g.title || `Featured Execution 0${idx + 1}`,
+        cover: cover,
+        category: g.category || 'Featured Portfolio',
+        desc: g.description || g.desc || `${g.title} designed and crafted by Spaces & Places Lahore.`,
+        images: images
+      };
+    });
+  }
+  const list = rawProjects && rawProjects.length > 0 ? rawProjects : [];
   return list.filter(p => p && p.id !== 'leisure' && p.title?.toUpperCase() !== 'LEISURE');
+});
+
+const availableCategories = computed(() => {
+  const cats = new Set();
+  allProjects.value.forEach(p => {
+    if (p.category && p.category.trim()) cats.add(p.category.trim());
+  });
+  return ['all', ...Array.from(cats)];
 });
 
 const filteredProjects = computed(() => {

@@ -14,7 +14,7 @@
       </h2>
 
       <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-        {{ ctaData?.subtitle || 'Schedule a private design consultation at our Lahore studio or request an on-site feasibility evaluation today.' }}
+        {{ ctaData?.subtitle || 'Schedule a private design consultation at our Lahore office or request an on-site feasibility evaluation today.' }}
       </p>
 
       <div class="pt-4 flex flex-wrap items-center justify-center gap-4">

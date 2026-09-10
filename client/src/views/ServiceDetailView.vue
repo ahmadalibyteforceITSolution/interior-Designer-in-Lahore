@@ -32,12 +32,18 @@
       <!-- Overview Section -->
       <OverviewSection :overview-data="pageData.overview" />
 
+      <!-- Domain-Specific Visual Design Experience -->
+      <InteriorServiceDesign v-if="pageData.category === 'interior-design'" :page="pageData" />
+      <ArchitectureServiceDesign v-else-if="pageData.category === 'architectural-designs'" :page="pageData" />
+      <ConstructionServiceDesign v-else-if="pageData.category === 'construction-services'" :page="pageData" />
+      <FurnitureServiceDesign v-else-if="pageData.category === 'furniture'" :page="pageData" />
+
       <!-- Detailed Section Cards (editable/deletable from admin) -->
       <SectionCardsGrid
         v-if="pageData.sections?.length"
         :sections="pageData.sections"
         :section-badge="pageData.sectionBadge || 'SERVICE CAPABILITIES'"
-        :section-title="pageData.sectionTitle || `${pageData.title.toUpperCase()} ARCHITECTURE`"
+        :section-title="pageData.sectionTitle || `${pageData.title.toUpperCase()} SPECIFICATIONS`"
         :section-subtitle="pageData.sectionSubtitle || 'Specialized deliverables, engineering methodologies, and noble material specifications.'"
       />
 
@@ -48,12 +54,18 @@
       <ProjectGallery
         v-if="pageData.gallery?.length"
         :gallery="pageData.gallery"
+        :section-badge="pageData.title?.toUpperCase() + ' PORTFOLIO'"
+        :section-title="`${pageData.title.toUpperCase()} SHOWCASE & EXECUTIONS`"
+        :section-subtitle="`Featured commissions and architectural projects delivered by Spaces & Places Lahore for ${pageData.title}.`"
       />
 
       <!-- Dynamic FAQs (with Schema.org structured data) -->
       <FaqAccordion
         v-if="pageData.faqs?.length"
         :faqs="pageData.faqs"
+        :badge="pageData.title?.toUpperCase() + ' FAQ'"
+        :title="`${pageData.title.toUpperCase()} INQUIRIES & ADVISORY`"
+        :subtitle="`Clear answers to common questions regarding timelines, material specifications, and budgeting for ${pageData.title}.`"
       />
 
       <!-- Bottom Call to Action Banner -->
@@ -77,6 +89,10 @@ import ProjectGallery from '../components/common/ProjectGallery.vue';
 import FaqAccordion from '../components/common/FaqAccordion.vue';
 import CtaBanner from '../components/common/CtaBanner.vue';
 import AdSenseSlot from '../components/layout/AdSenseSlot.vue';
+import InteriorServiceDesign from '../components/services/InteriorServiceDesign.vue';
+import ArchitectureServiceDesign from '../components/services/ArchitectureServiceDesign.vue';
+import ConstructionServiceDesign from '../components/services/ConstructionServiceDesign.vue';
+import FurnitureServiceDesign from '../components/services/FurnitureServiceDesign.vue';
 
 const route = useRoute();
 const { setMeta } = useSeo();

@@ -4,12 +4,12 @@
       
       <!-- Heading -->
       <div class="text-center mb-12 space-y-2">
-        <span class="text-xs font-bold text-amber-700 dark:text-brand-gold tracking-widest uppercase">ANSWERS & CLARITY</span>
+        <span class="text-xs font-bold text-amber-700 dark:text-brand-gold tracking-widest uppercase">{{ badge || 'ANSWERS & CLARITY' }}</span>
         <h2 class="text-2xl sm:text-3xl font-heading font-black text-gray-900 dark:text-white uppercase tracking-tight">
-          FREQUENTLY ASKED QUESTIONS
+          {{ title || 'FREQUENTLY ASKED QUESTIONS' }}
         </h2>
         <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-          Everything you need to know about our architectural, interior, and construction services in Lahore.
+          {{ subtitle || 'Everything you need to know about our architectural, interior, and construction services in Lahore.' }}
         </p>
       </div>
 
@@ -66,6 +66,18 @@ const props = defineProps({
   faqs: {
     type: Array,
     default: () => []
+  },
+  badge: {
+    type: String,
+    default: ''
+  },
+  title: {
+    type: String,
+    default: ''
+  },
+  subtitle: {
+    type: String,
+    default: ''
   }
 });
 
