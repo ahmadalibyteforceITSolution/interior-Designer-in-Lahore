@@ -31,9 +31,9 @@
     <!-- Stat Metrics -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      <div class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden">
+      <router-link to="/admin/pages" class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden hover:border-brand-gold/60 transition-colors block group">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Total Managed Pages</span>
+          <span class="text-xs font-bold text-gray-400 group-hover:text-white uppercase tracking-wider transition-colors">Total Managed Pages</span>
           <span class="text-brand-gold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -41,12 +41,12 @@
           </span>
         </div>
         <div class="text-3xl font-heading font-black text-white mt-3">{{ stats.pagesCount }}</div>
-        <span class="text-[10px] text-brand-gold mt-1 block">30 Active Pages in MongoDB</span>
-      </div>
+        <span class="text-[10px] text-brand-gold mt-1 block">30 Active Pages in MongoDB →</span>
+      </router-link>
 
-      <div class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden">
+      <router-link to="/admin/blogs" class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden hover:border-brand-gold/60 transition-colors block group">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Blog Articles</span>
+          <span class="text-xs font-bold text-gray-400 group-hover:text-white uppercase tracking-wider transition-colors">Blog Articles</span>
           <span class="text-brand-gold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
@@ -54,12 +54,12 @@
           </span>
         </div>
         <div class="text-3xl font-heading font-black text-white mt-3">{{ stats.blogsCount }}</div>
-        <span class="text-[10px] text-gray-400 mt-1 block">AdSense Content Engine</span>
-      </div>
+        <span class="text-[10px] text-gray-400 group-hover:text-brand-gold mt-1 block transition-colors">AdSense Content Engine →</span>
+      </router-link>
 
-      <div class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden">
+      <router-link to="/admin/leads" class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden hover:border-brand-gold/60 transition-colors block group">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Client Inquiries / Leads</span>
+          <span class="text-xs font-bold text-gray-400 group-hover:text-white uppercase tracking-wider transition-colors">Client Inquiries / Leads</span>
           <span class="text-brand-gold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -67,12 +67,12 @@
           </span>
         </div>
         <div class="text-3xl font-heading font-black text-white mt-3">{{ stats.leadsCount }}</div>
-        <span class="text-[10px] text-emerald-400 mt-1 block">Lead Capture Active</span>
-      </div>
+        <span class="text-[10px] text-emerald-400 mt-1 block">Lead Capture Active →</span>
+      </router-link>
 
-      <div class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden">
+      <router-link to="/admin/media" class="bg-brand-surface border border-brand-border p-5 relative overflow-hidden hover:border-brand-gold/60 transition-colors block group">
         <div class="flex items-center justify-between">
-          <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Media Assets</span>
+          <span class="text-xs font-bold text-gray-400 group-hover:text-white uppercase tracking-wider transition-colors">Media Assets</span>
           <span class="text-brand-gold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -80,8 +80,8 @@
           </span>
         </div>
         <div class="text-3xl font-heading font-black text-white mt-3">{{ stats.mediaCount }}</div>
-        <span class="text-[10px] text-gray-400 mt-1 block">Migrated from inner-design1</span>
-      </div>
+        <span class="text-[10px] text-gray-400 group-hover:text-brand-gold mt-1 block transition-colors">Open Media Library →</span>
+      </router-link>
 
     </div>
 

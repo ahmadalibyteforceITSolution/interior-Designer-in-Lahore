@@ -1,15 +1,15 @@
 <template>
-  <div class="min-h-screen bg-black text-gray-200 flex flex-col font-sans">
+  <div class="h-screen h-[100dvh] bg-black text-gray-200 flex flex-col font-sans overflow-hidden">
     <AdminHeader
       :is-sidebar-open="isSidebarOpen"
       @toggle-sidebar="isSidebarOpen = !isSidebarOpen"
     />
-    <div class="flex-1 flex overflow-hidden relative">
+    <div class="flex-1 flex overflow-hidden relative min-h-0">
       <AdminSidebar
         :is-open="isSidebarOpen"
         @close="isSidebarOpen = false"
       />
-      <main class="flex-1 overflow-y-auto p-3 sm:p-6 lg:p-8 bg-[#0a0a0a]">
+      <main class="flex-1 overflow-y-auto min-h-0 p-3 sm:p-6 lg:p-8 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto">
           <router-view />
         </div>
