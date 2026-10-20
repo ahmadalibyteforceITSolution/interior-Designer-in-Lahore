@@ -16,9 +16,10 @@ const settings = ref({
   adsenseEnabled: true,
   adSlots: { header: true, inArticle: true, sidebar: true, footer: true },
   socialLinks: {
-    facebook: 'https://facebook.com/spacesandplaces',
-    instagram: 'https://instagram.com/spacesandplaces',
-    linkedin: 'https://linkedin.com/company/spacesandplaces',
+    facebook: 'https://www.facebook.com/spacesnplacesofficial',
+    instagram: 'https://www.instagram.com/spacesnplacesofficial/',
+    linkedin: 'https://www.linkedin.com/company/spacesnplaces/',
+    tiktok: 'https://www.tiktok.com/@spacesnplacesofficial',
     youtube: 'https://youtube.com'
   }
 });

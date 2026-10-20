@@ -26,9 +26,10 @@ const siteSettingsSchema = new mongoose.Schema({
     default: "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://spacesandplaces.com.pk/sitemap.xml"
   },
   socialLinks: {
-    facebook: { type: String, default: 'https://facebook.com/spacesandplaces' },
-    instagram: { type: String, default: 'https://instagram.com/spacesandplaces' },
-    linkedin: { type: String, default: 'https://linkedin.com/company/spacesandplaces' },
+    facebook: { type: String, default: 'https://www.facebook.com/spacesnplacesofficial' },
+    instagram: { type: String, default: 'https://www.instagram.com/spacesnplacesofficial/' },
+    linkedin: { type: String, default: 'https://www.linkedin.com/company/spacesnplaces/' },
+    tiktok: { type: String, default: 'https://www.tiktok.com/@spacesnplacesofficial' },
     youtube: { type: String, default: 'https://youtube.com' }
   }
 }, { timestamps: true });

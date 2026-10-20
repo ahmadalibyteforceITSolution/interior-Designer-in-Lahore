@@ -267,7 +267,13 @@ const form = ref({
   },
   googleAnalyticsId: '',
   googleSiteVerification: '',
-  socialLinks: {}
+  socialLinks: {
+    facebook: 'https://www.facebook.com/spacesnplacesofficial',
+    instagram: 'https://www.instagram.com/spacesnplacesofficial/',
+    linkedin: 'https://www.linkedin.com/company/spacesnplaces/',
+    tiktok: 'https://www.tiktok.com/@spacesnplacesofficial',
+    youtube: 'https://youtube.com'
+  }
 });
 
 onMounted(async () => {
