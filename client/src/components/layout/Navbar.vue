@@ -1,10 +1,10 @@
 <template>
   <header
     :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300 animate-fade-in-down',
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
       isScrolled || isMobileMenuOpen
-        ? (isDark ? 'bg-black py-3 shadow-2xl border-b border-brand-border' : 'bg-white py-3 shadow-md border-b border-gray-200')
-        : 'bg-transparent py-4 sm:py-5 border-b border-transparent'
+        ? (isDark ? 'bg-black/95 backdrop-blur-md py-2.5 sm:py-3 shadow-2xl border-b border-brand-border' : 'bg-white/95 backdrop-blur-md py-2.5 sm:py-3 shadow-md border-b border-gray-200')
+        : 'bg-transparent py-3 sm:py-4 lg:py-5 border-b border-transparent'
     ]"
   >
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -404,29 +404,40 @@
       </div>
     </div>
 
-    <!-- Solid Dim Backdrop Overlay on Mobile Menu Open -->
-    <div
-      v-if="isMobileMenuOpen"
-      class="fixed inset-0 top-[54px] sm:top-[64px] bg-black/80 backdrop-blur-sm z-40 xl:hidden"
-      @click="isMobileMenuOpen = false"
-    ></div>
-
-    <!-- Mobile Drawer Menu (Solid 100% Opaque, Light and Dark) -->
-    <transition
-      enter-active-class="transition duration-300 ease-out"
-      enter-from-class="opacity-0 -translate-y-4"
-      enter-to-class="opacity-100 translate-y-0"
-      leave-active-class="transition duration-200 ease-in"
-      leave-from-class="opacity-100 translate-y-0"
-      leave-to-class="opacity-0 -translate-y-4"
-    >
-      <div
-        v-if="isMobileMenuOpen"
-        :class="[
-          'xl:hidden fixed top-[54px] sm:top-[64px] inset-x-0 bottom-0 z-50 px-5 sm:px-8 py-6 overflow-y-auto border-b-2 border-brand-gold shadow-2xl animate-fade-in-down',
-          isDark ? 'bg-[#0e0e0e] text-white divide-y divide-[#222]' : 'bg-white text-gray-900 divide-y divide-gray-100'
-        ]"
+    <!-- Teleport Mobile Menu & Backdrop to <body> to avoid any header stacking context or clipping bugs -->
+    <Teleport to="body">
+      <!-- Solid Dim Backdrop Overlay on Mobile Menu Open -->
+      <transition
+        enter-active-class="transition-opacity duration-300 ease-out"
+        enter-from-class="opacity-0"
+        enter-to-class="opacity-100"
+        leave-active-class="transition-opacity duration-200 ease-in"
+        leave-from-class="opacity-100"
+        leave-to-class="opacity-0"
       >
+        <div
+          v-if="isMobileMenuOpen"
+          class="fixed inset-0 top-[54px] sm:top-[64px] bg-black/80 backdrop-blur-sm z-[9998] xl:hidden"
+          @click="isMobileMenuOpen = false"
+        ></div>
+      </transition>
+
+      <!-- Mobile Drawer Menu (Solid 100% Opaque, Light and Dark) -->
+      <transition
+        enter-active-class="transition duration-300 ease-out"
+        enter-from-class="opacity-0 -translate-y-4"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition duration-200 ease-in"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 -translate-y-4"
+      >
+        <div
+          v-if="isMobileMenuOpen"
+          :class="[
+            'xl:hidden fixed top-[54px] sm:top-[64px] inset-x-0 bottom-0 z-[9999] px-5 sm:px-8 py-6 overflow-y-auto border-b-2 border-brand-gold shadow-2xl',
+            isDark ? 'bg-[#0e0e0e] text-white divide-y divide-[#222]' : 'bg-white text-gray-900 divide-y divide-gray-100'
+          ]"
+        >
         <div class="space-y-3 text-[13px] font-bold uppercase tracking-wider">
           
           <div class="pt-1">
@@ -656,6 +667,7 @@
         </div>
       </div>
     </transition>
+    </Teleport>
   </header>
 </template>
 
