@@ -302,7 +302,7 @@
         </nav>
 
         <!-- Right Side: Theme Toggle + Let's Talk CTA + Phone -->
-        <div class="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0 ml-4">
+        <div class="hidden xl:flex items-center gap-3 2xl:gap-4 shrink-0 ml-4">
           
           <!-- Theme Toggle Button (Dark / Light) -->
           <button
@@ -345,27 +345,38 @@
 
         </div>
 
-        <!-- Mobile Buttons (Theme Toggle + Let's Talk + Hamburger) -->
-        <div class="flex xl:hidden items-center gap-2 sm:gap-3">
-          
+        <!-- Mobile Buttons (Phone + Theme Switcher + TALK + Hamburger) -->
+        <div class="flex xl:hidden items-center gap-1.5 sm:gap-2.5">
+          <!-- Mobile Direct Call Button -->
+          <a
+            :href="'tel:' + (settings.phone || '+923001999967')"
+            class="p-2 rounded-full border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-black transition-colors flex items-center justify-center shrink-0"
+            aria-label="Direct Phone Hotline"
+          >
+            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
+            </svg>
+          </a>
+
           <!-- Mobile Theme Switcher -->
           <button
             @click="toggleTheme"
-            class="p-1.5 rounded-full border text-brand-gold transition-colors"
-            :class="isDark ? 'border-brand-border bg-black' : 'border-gray-300 bg-white'"
+            class="p-2 rounded-full border text-brand-gold transition-colors flex items-center justify-center shrink-0"
+            :class="isDark ? 'border-brand-border bg-black/80' : 'border-gray-300 bg-white'"
             aria-label="Toggle Theme"
           >
-            <svg v-if="isDark" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg v-if="isDark" class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
             </svg>
-            <svg v-else class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg v-else class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
             </svg>
           </button>
 
+          <!-- TALK CTA Button -->
           <button
             @click="openLetsTalk('Mobile Quick Consultation')"
-            class="px-2.5 py-1 text-[11px] font-bold text-brand-gold border border-brand-gold uppercase"
+            class="px-2.5 sm:px-3 py-1.5 text-[11px] sm:text-xs font-bold text-brand-gold border border-brand-gold hover:bg-brand-gold hover:text-black uppercase rounded-sm transition-colors shrink-0"
           >
             TALK
           </button>
@@ -373,7 +384,7 @@
           <!-- Hamburger Button -->
           <button
             @click="isMobileMenuOpen = !isMobileMenuOpen"
-            class="focus:outline-none p-1.5 transition-colors"
+            class="p-2 transition-colors focus:outline-none shrink-0"
             :class="[
               isMobileMenuOpen || isScrolled
                 ? (isDark ? 'text-white hover:text-brand-gold' : 'text-gray-900 hover:text-amber-700')
@@ -396,7 +407,7 @@
     <!-- Solid Dim Backdrop Overlay on Mobile Menu Open -->
     <div
       v-if="isMobileMenuOpen"
-      class="fixed inset-0 top-[60px] bg-black/85 backdrop-blur-sm z-40 xl:hidden"
+      class="fixed inset-0 top-[54px] sm:top-[64px] bg-black/80 backdrop-blur-sm z-40 xl:hidden"
       @click="isMobileMenuOpen = false"
     ></div>
 
@@ -412,7 +423,7 @@
       <div
         v-if="isMobileMenuOpen"
         :class="[
-          'xl:hidden relative z-50 px-6 py-6 max-h-[85vh] overflow-y-auto border-b-2 border-brand-gold shadow-2xl animate-fade-in-down',
+          'xl:hidden fixed top-[54px] sm:top-[64px] inset-x-0 bottom-0 z-50 px-5 sm:px-8 py-6 overflow-y-auto border-b-2 border-brand-gold shadow-2xl animate-fade-in-down',
           isDark ? 'bg-[#0e0e0e] text-white divide-y divide-[#222]' : 'bg-white text-gray-900 divide-y divide-gray-100'
         ]"
       >
@@ -577,17 +588,69 @@
             </router-link>
           </div>
 
-          <!-- Direct Call in Drawer -->
-          <div class="pt-4 mt-2">
+          <!-- Direct Actions in Mobile Drawer -->
+          <div class="pt-4 mt-2 space-y-3">
             <a
               :href="'tel:' + (settings.phone || '+923001999967')"
-              class="flex items-center gap-3 py-3 px-4 bg-brand-gold/10 border border-brand-gold/40 text-brand-gold font-bold text-[14px]"
+              class="flex items-center justify-center gap-3 py-3 px-4 bg-brand-gold/10 border border-brand-gold/40 text-brand-gold font-bold text-sm tracking-wide hover:bg-brand-gold hover:text-black transition-all rounded-sm"
             >
-              <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/>
               </svg>
-              <span>{{ settings.phone || '+92 300 1999967' }}</span>
+              <span>Call Us: {{ settings.phone || '+92 300 1999967' }}</span>
             </a>
+
+            <!-- Social Links in Drawer -->
+            <div class="pt-3 border-t border-neutral-800/80">
+              <p class="text-[11px] text-gray-400 text-center mb-3 uppercase tracking-wider font-semibold">Connect With Us</p>
+              <div class="flex items-center justify-center gap-3">
+                <a
+                  :href="socialLinks.facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-[#e5c158] text-white hover:text-black flex items-center justify-center transition-all shadow-sm"
+                >
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a
+                  :href="socialLinks.instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-[#e5c158] text-white hover:text-black flex items-center justify-center transition-all shadow-sm"
+                >
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a
+                  :href="socialLinks.linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-[#e5c158] text-white hover:text-black flex items-center justify-center transition-all shadow-sm"
+                >
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a
+                  :href="socialLinks.tiktok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-[#e5c158] text-white hover:text-black flex items-center justify-center transition-all shadow-sm"
+                >
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.19-.04 2.31-.66 2.92-1.68.32-.51.48-1.11.48-1.71.04-3.53.01-7.06.02-10.59.01-3.26.01-6.52.01-9.78z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -597,7 +660,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useSettings } from '../../composables/useSettings';
 import { useModal } from '../../composables/useModal';
@@ -607,6 +670,13 @@ const route = useRoute();
 const { settings } = useSettings();
 const { openLetsTalk } = useModal();
 const { isDark, initTheme, toggleTheme } = useTheme();
+
+const socialLinks = computed(() => ({
+  facebook: settings.value?.socialLinks?.facebook || 'https://www.facebook.com/spacesnplacesofficial',
+  instagram: settings.value?.socialLinks?.instagram || 'https://www.instagram.com/spacesnplacesofficial/',
+  linkedin: settings.value?.socialLinks?.linkedin || 'https://www.linkedin.com/company/spacesnplaces/',
+  tiktok: settings.value?.socialLinks?.tiktok || 'https://www.tiktok.com/@spacesnplacesofficial'
+}));
 
 const isScrolled = ref(false);
 const isMobileMenuOpen = ref(false);
@@ -673,6 +743,18 @@ function handleScroll() {
   isScrolled.value = window.scrollY > 30;
 }
 
+// Auto-close drawer on navigation
+watch(() => route.path, () => {
+  isMobileMenuOpen.value = false;
+});
+
+// Prevent background body scroll when mobile menu is open
+watch(isMobileMenuOpen, (isOpen) => {
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+});
+
 onMounted(() => {
   initTheme();
   window.addEventListener('scroll', handleScroll);
@@ -680,6 +762,9 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = '';
+  }
 });
 
 function openDropdown(name) {
