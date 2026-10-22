@@ -114,8 +114,14 @@ app.get('/robots.txt', async (req, res) => {
 });
 
 // Serve frontend dist if available (production build)
-const clientDist = path.resolve(__dirname, '..', 'client', 'dist');
-if (fs.existsSync(clientDist)) {
+const clientDistPaths = [
+  path.resolve(__dirname, '..', 'client', 'dist'),
+  path.resolve(__dirname, '..', 'dist'),
+  path.resolve(__dirname, 'client', 'dist'),
+  path.resolve(__dirname, 'dist')
+];
+const clientDist = clientDistPaths.find(p => fs.existsSync(p));
+if (clientDist) {
   app.use(express.static(clientDist));
   app.get('*', (req, res) => {
     res.sendFile(path.join(clientDist, 'index.html'));
