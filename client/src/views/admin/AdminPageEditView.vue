@@ -525,7 +525,7 @@
           {{ page.metaTitle || page.title + ' | Spaces & Places' }}
         </div>
         <div class="text-[#006621] dark:text-[#bdc1c6] text-xs">
-          https://spacesandplaces.com.pk/{{ page.slug === 'home' ? '' : page.slug }}
+          https://interiordesignerinlahore.com/{{ page.slug === 'home' ? '' : page.slug }}
         </div>
         <div class="text-gray-300 text-xs leading-snug">
           {{ page.metaDescription || 'No meta description set yet.' }}

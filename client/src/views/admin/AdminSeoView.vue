@@ -76,7 +76,7 @@
             <h3 class="text-base font-heading font-bold text-white uppercase">
               Editing SEO for: {{ selectedPage.title }}
             </h3>
-            <span class="text-xs text-brand-gold font-mono">https://spacesandplaces.com.pk/{{ selectedPage.slug === 'home' ? '' : selectedPage.slug }}</span>
+            <span class="text-xs text-brand-gold font-mono">https://interiordesignerinlahore.com/{{ selectedPage.slug === 'home' ? '' : selectedPage.slug }}</span>
           </div>
           <button
             @click="savePageSeo"
@@ -97,7 +97,7 @@
             {{ selectedPage.metaTitle || selectedPage.title + ' | Spaces & Places Lahore' }}
           </div>
           <div class="text-[#bdc1c6] text-xs font-mono">
-            https://spacesandplaces.com.pk/{{ selectedPage.slug === 'home' ? '' : selectedPage.slug }}
+            https://interiordesignerinlahore.com/{{ selectedPage.slug === 'home' ? '' : selectedPage.slug }}
           </div>
           <div class="text-gray-300 text-xs leading-relaxed pt-1">
             {{ selectedPage.metaDescription || 'No meta description configured yet. Search engines will generate a snippet from on-page content.' }}

@@ -23,7 +23,7 @@ const siteSettingsSchema = new mongoose.Schema({
   googleSiteVerification: { type: String, default: '' },
   robotsTxt: {
     type: String,
-    default: "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://spacesandplaces.com.pk/sitemap.xml"
+    default: "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://interiordesignerinlahore.com/sitemap.xml"
   },
   socialLinks: {
     facebook: { type: String, default: 'https://www.facebook.com/spacesnplacesofficial' },

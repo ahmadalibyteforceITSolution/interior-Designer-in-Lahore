@@ -53,7 +53,7 @@ app.use('/api', apiRoutes);
 // Dynamic Sitemap Generator
 app.get('/sitemap.xml', async (req, res) => {
   try {
-    const baseUrl = 'https://spacesandplaces.com.pk';
+    const baseUrl = 'https://interiordesignerinlahore.com';
     let pages = [];
     let blogs = [];
 
@@ -104,7 +104,7 @@ app.get('/robots.txt', async (req, res) => {
 
     const robotsContent = settings && settings.robotsTxt
       ? settings.robotsTxt
-      : "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://spacesandplaces.com.pk/sitemap.xml";
+      : "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://interiordesignerinlahore.com/sitemap.xml";
 
     res.header('Content-Type', 'text/plain');
     res.send(robotsContent);

@@ -145,7 +145,7 @@ onMounted(async () => {
       title: data.metaTitle || `${data.title} | Spaces & Places`,
       metaDescription: data.metaDescription || data.excerpt,
       focusKeywords: data.tags?.join(', ') || 'Interior Design, Architecture Lahore',
-      canonicalUrl: `https://spacesandplaces.com.pk/blog/${data.slug}`,
+      canonicalUrl: `https://interiordesignerinlahore.com/blog/${data.slug}`,
       ogImage: data.featuredImage
     });
 
@@ -170,7 +170,7 @@ function injectArticleSchema(post) {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
-    "image": post.featuredImage ? [`https://spacesandplaces.com.pk${post.featuredImage}`] : [],
+    "image": post.featuredImage ? [`https://interiordesignerinlahore.com${post.featuredImage}`] : [],
     "datePublished": post.createdAt,
     "dateModified": post.updatedAt || post.createdAt,
     "author": [{
@@ -182,7 +182,7 @@ function injectArticleSchema(post) {
       "name": "Spaces & Places",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://spacesandplaces.com.pk/uploads/header-logo.webp"
+        "url": "https://interiordesignerinlahore.com/uploads/header-logo.webp"
       }
     },
     "description": post.excerpt

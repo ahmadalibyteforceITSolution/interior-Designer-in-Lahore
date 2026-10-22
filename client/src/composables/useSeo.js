@@ -78,9 +78,9 @@ export function useSeo() {
       "@context": "https://schema.org",
       "@type": "GeneralContractor",
       "name": "Spaces & Places",
-      "image": "https://spacesandplaces.com.pk/uploads/header-logo.webp",
+      "image": "https://interiordesignerinlahore.com/uploads/header-logo.webp",
       "telephone": "+92 300 1999967",
-      "url": "https://spacesandplaces.com.pk",
+      "url": "https://interiordesignerinlahore.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Gulberg & DHA",

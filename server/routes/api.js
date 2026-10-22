@@ -343,7 +343,7 @@ router.post('/pages', auth, async (req, res) => {
       metaTitle: req.body.metaTitle || `${title.trim()} | Spaces & Places Lahore`,
       metaDescription: req.body.metaDescription || `Discover bespoke luxury ${title.trim()} by Spaces & Places, leading architects and interior designers in Lahore.`,
       focusKeywords: req.body.focusKeywords || `${title.trim()}, Interior Designers in Lahore, Architects in Lahore`,
-      canonicalUrl: req.body.canonicalUrl || `https://spacesandplaces.com.pk/${cleanSlug}`,
+      canonicalUrl: req.body.canonicalUrl || `https://interiordesignerinlahore.com/${cleanSlug}`,
       ogImage: req.body.ogImage || '/uploads/living-eye-level.jpg',
       indexRobots: req.body.indexRobots !== undefined ? req.body.indexRobots : true,
       hero: req.body.hero || {
@@ -496,7 +496,7 @@ router.get('/seo/robots', async (req, res) => {
     const settings = await SiteSettings.findOne();
     const robots = settings && settings.robotsTxt
       ? settings.robotsTxt
-      : "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://spacesandplaces.com.pk/sitemap.xml";
+      : "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api\nSitemap: https://interiordesignerinlahore.com/sitemap.xml";
     res.json({ robotsTxt: robots });
   } catch (err) {
     res.status(500).json({ message: 'Error fetching robots.txt', error: err.message });
