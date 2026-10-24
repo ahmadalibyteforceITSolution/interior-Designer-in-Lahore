@@ -122,8 +122,50 @@ const clientDistPaths = [
 ];
 const clientDist = clientDistPaths.find(p => fs.existsSync(p));
 if (clientDist) {
-  app.use(express.static(clientDist));
-  app.get('*', (req, res) => {
+  // Serve static assets (images, css, js) but let root / SPA routes be rendered dynamically
+  app.use(express.static(clientDist, { index: false }));
+  
+  app.get('*', async (req, res) => {
+    try {
+      const indexPath = path.join(clientDist, 'index.html');
+      if (fs.existsSync(indexPath)) {
+        let html = fs.readFileSync(indexPath, 'utf-8');
+        try {
+          const settings = await SiteSettings.findOne();
+          if (settings) {
+            let pubId = settings.adsensePublisherId || '';
+            const match = pubId.match(/ca-pub-\d+/i) || pubId.match(/pub-\d+/i);
+            if (match) {
+              pubId = match[0].toLowerCase().startsWith('ca-') ? match[0].toLowerCase() : `ca-${match[0].toLowerCase()}`;
+            }
+
+            let headInjections = [];
+            if (settings.adsenseEnabled && pubId && pubId.startsWith('ca-pub-') && !html.includes(pubId)) {
+              headInjections.push(`    <!-- Dynamic Google AdSense Verification -->`);
+              headInjections.push(`    <meta name="google-adsense-account" content="${pubId}">`);
+              headInjections.push(`    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${pubId}" crossorigin="anonymous"></script>`);
+            }
+
+            if (settings.googleSiteVerification && !html.includes(settings.googleSiteVerification)) {
+              let gv = settings.googleSiteVerification.replace(/<[^>]*>/g, '').trim();
+              const gvMatch = gv.match(/content=["']([^"']+)["']/i);
+              if (gvMatch) gv = gvMatch[1];
+              if (gv) {
+                headInjections.push(`    <meta name="google-site-verification" content="${gv}">`);
+              }
+            }
+
+            if (headInjections.length > 0) {
+              html = html.replace(/<head>/i, '<head>\n' + headInjections.join('\n'));
+            }
+          }
+        } catch (dbErr) {
+          console.warn('DB settings read error for HTML injection:', dbErr.message);
+        }
+        res.setHeader('Content-Type', 'text/html; charset=UTF-8');
+        return res.send(html);
+      }
+    } catch (err) {}
     res.sendFile(path.join(clientDist, 'index.html'));
   });
 }

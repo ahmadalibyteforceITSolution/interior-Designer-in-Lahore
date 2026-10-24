@@ -57,12 +57,14 @@
             </label>
             <input
               v-model="form.adsensePublisherId"
+              @input="normalizePublisherId"
+              @blur="normalizePublisherId"
               type="text"
               placeholder="e.g. ca-pub-9876543210123456"
               class="w-full bg-black border border-brand-border focus:border-brand-gold text-white px-3 py-2 outline-none font-mono"
             />
-            <span class="text-[10px] text-gray-500 block mt-1">
-              Found in your Google AdSense account under Account &gt; Settings &gt; Account information.
+            <span class="text-[10px] text-gray-400 block mt-1">
+              Supports raw ID (e.g. <span class="text-brand-gold">ca-pub-1234567890123456</span>) or full &lt;script&gt; code copied directly from AdSense.
             </span>
           </div>
 
@@ -212,8 +214,10 @@
             <label class="block text-gray-300 font-medium mb-1 uppercase">Google Site Verification Code</label>
             <input
               v-model="form.googleSiteVerification"
+              @input="normalizeSiteVerification"
+              @blur="normalizeSiteVerification"
               type="text"
-              placeholder="google-site-verification token"
+              placeholder="e.g. AbCdEf12345 or <meta...>"
               class="w-full bg-black border border-brand-border text-white px-3 py-2 outline-none font-mono"
             />
           </div>
@@ -293,11 +297,39 @@ onMounted(async () => {
   }
 });
 
+function normalizePublisherId() {
+  if (!form.value.adsensePublisherId) return;
+  const raw = form.value.adsensePublisherId.trim();
+  const match = raw.match(/ca-pub-\d+/i) || raw.match(/pub-\d+/i);
+  if (match) {
+    form.value.adsensePublisherId = match[0].toLowerCase().startsWith('ca-')
+      ? match[0].toLowerCase()
+      : `ca-${match[0].toLowerCase()}`;
+  }
+}
+
+function normalizeSiteVerification() {
+  if (!form.value.googleSiteVerification) return;
+  let raw = form.value.googleSiteVerification.trim();
+  const match = raw.match(/content=["']([^"']+)["']/i);
+  if (match) {
+    form.value.googleSiteVerification = match[1];
+  } else {
+    form.value.googleSiteVerification = raw.replace(/<[^>]*>/g, '').trim();
+  }
+}
+
 async function saveSettings() {
+  normalizePublisherId();
+  normalizeSiteVerification();
   saving.value = true;
   try {
     await updateSettings(form.value);
-    showToast('Configuration updated in MongoDB Atlas!', 'success');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('snp_cache_bust', Date.now().toString());
+      window.dispatchEvent(new Event('storage'));
+    }
+    showToast('Configuration updated and synchronized for Google AdSense & SEO!', 'success');
   } catch (err) {
     showToast('Error saving settings: ' + err.message, 'error');
   } finally {

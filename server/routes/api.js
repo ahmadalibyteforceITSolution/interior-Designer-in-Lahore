@@ -202,10 +202,88 @@ router.get('/settings', async (req, res) => {
   }
 });
 
+// Helper to synchronize client/dist/index.html files with latest settings
+function syncIndexHtmlFiles(settings) {
+  try {
+    const candidatePaths = [
+      path.resolve(__dirname, '..', '..', 'client', 'dist', 'index.html'),
+      path.resolve(__dirname, '..', 'client', 'dist', 'index.html'),
+      path.resolve(__dirname, '..', 'dist', 'index.html'),
+      path.resolve(__dirname, 'client', 'dist', 'index.html')
+    ];
+
+    let pubId = settings.adsensePublisherId || '';
+    const match = pubId.match(/ca-pub-\d+/i) || pubId.match(/pub-\d+/i);
+    if (match) {
+      pubId = match[0].toLowerCase().startsWith('ca-') ? match[0].toLowerCase() : `ca-${match[0].toLowerCase()}`;
+    }
+
+    for (const indexPath of candidatePaths) {
+      if (!fs.existsSync(indexPath)) continue;
+      let html = fs.readFileSync(indexPath, 'utf-8');
+
+      // Remove any prior injected adsense / verification blocks
+      html = html.replace(/\s*<!-- Google AdSense Verification -->[\s\S]*?<\/script>/gi, '');
+      html = html.replace(/\s*<!-- Dynamic Google AdSense Verification -->[\s\S]*?<\/script>/gi, '');
+      html = html.replace(/\s*<meta name="google-adsense-account"[^>]*>/gi, '');
+      html = html.replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^>]*><\/script>/gi, '');
+      html = html.replace(/\s*<meta name="google-site-verification"[^>]*>/gi, '');
+
+      let headTags = [];
+      if (settings.adsenseEnabled && pubId && pubId.startsWith('ca-pub-')) {
+        headTags.push(`<!-- Google AdSense Verification -->`);
+        headTags.push(`<meta name="google-adsense-account" content="${pubId}">`);
+        headTags.push(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${pubId}" crossorigin="anonymous"></script>`);
+      }
+
+      if (settings.googleSiteVerification) {
+        let gv = settings.googleSiteVerification.replace(/<[^>]*>/g, '').trim();
+        const gvMatch = gv.match(/content=["']([^"']+)["']/i);
+        if (gvMatch) gv = gvMatch[1];
+        if (gv) {
+          headTags.push(`<meta name="google-site-verification" content="${gv}">`);
+        }
+      }
+
+      // Ensure favicon tags
+      if (!html.includes('rel="shortcut icon"')) {
+        headTags.push(`<link rel="shortcut icon" href="/logo.png" />`);
+        headTags.push(`<link rel="apple-touch-icon" href="/logo.png" />`);
+      }
+
+      if (headTags.length > 0) {
+        const injectStr = '\n    ' + headTags.join('\n    ') + '\n';
+        html = html.replace(/<head>/i, '<head>' + injectStr);
+        fs.writeFileSync(indexPath, html, 'utf-8');
+      }
+    }
+  } catch (err) {
+    console.warn('Sync index.html warning:', err.message);
+  }
+}
+
 router.put('/settings', auth, async (req, res) => {
   try {
     clearServerCache();
     await ensureDb();
+
+    // Normalize adsensePublisherId if pasted with full script tag or irregular formatting
+    if (req.body.adsensePublisherId) {
+      const match = req.body.adsensePublisherId.match(/ca-pub-\d+/i) || req.body.adsensePublisherId.match(/pub-\d+/i);
+      if (match) {
+        req.body.adsensePublisherId = match[0].toLowerCase().startsWith('ca-') 
+          ? match[0].toLowerCase() 
+          : `ca-${match[0].toLowerCase()}`;
+      }
+    }
+
+    if (req.body.googleSiteVerification) {
+      const gvMatch = req.body.googleSiteVerification.match(/content=["']([^"']+)["']/i);
+      if (gvMatch) {
+        req.body.googleSiteVerification = gvMatch[1];
+      }
+    }
+
     let settings = await SiteSettings.findOne();
     if (!settings) {
       settings = new SiteSettings(req.body);
@@ -214,6 +292,10 @@ router.put('/settings', auth, async (req, res) => {
     }
     await settings.save();
     clearServerCache();
+
+    // Synchronize HTML files on disk for instant crawler verification
+    syncIndexHtmlFiles(settings);
+
     res.json({ message: 'Site settings updated successfully', settings });
   } catch (err) {
     res.status(500).json({ message: 'Error updating settings', error: err.message });

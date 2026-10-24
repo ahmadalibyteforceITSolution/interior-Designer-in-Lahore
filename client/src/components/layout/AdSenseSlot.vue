@@ -22,22 +22,22 @@
       <ins
         class="adsbygoogle"
         style="display:block"
-        :data-ad-client="settings.adsensePublisherId || 'ca-pub-9876543210123456'"
-        :data-ad-slot="adSlotId || '1234567890'"
+        :data-ad-client="cleanPublisherId"
+        :data-ad-slot="adSlotId || ''"
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
 
-      <!-- Pre-Approval Preview Banner (Safe & Compliant) -->
-      <div class="text-center py-2">
+      <!-- Pre-Approval Preview Banner (Only shown if publisher ID is not yet configured) -->
+      <div v-if="!isRealPublisherConfigured" class="text-center py-2">
         <div class="flex items-center justify-center gap-2 text-amber-700 dark:text-brand-gold/70 text-xs font-medium">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
-          <span>Google AdSense Placement ({{ slotType.toUpperCase() }})</span>
+          <span>Google AdSense Slot ({{ slotType.toUpperCase() }})</span>
         </div>
         <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-1">
-          Publisher ID: {{ settings.adsensePublisherId || 'Configurable in cPanel Dashboard' }}
+          Configure Publisher ID in Admin Panel &gt; Settings
         </p>
       </div>
     </div>
@@ -65,6 +65,22 @@ const isEnabled = computed(() => {
   if (!settings.value.adsenseEnabled) return false;
   if (!settings.value.adSlots) return true;
   return settings.value.adSlots[props.slotType] !== false;
+});
+
+const cleanPublisherId = computed(() => {
+  const raw = settings.value.adsensePublisherId || '';
+  const match = raw.match(/ca-pub-\d+/i) || raw.match(/pub-\d+/i);
+  if (match) {
+    return match[0].toLowerCase().startsWith('ca-') 
+      ? match[0].toLowerCase() 
+      : `ca-${match[0].toLowerCase()}`;
+  }
+  return raw;
+});
+
+const isRealPublisherConfigured = computed(() => {
+  const id = cleanPublisherId.value;
+  return id && id.startsWith('ca-pub-') && id !== 'ca-pub-9876543210123456';
 });
 
 onMounted(() => {
